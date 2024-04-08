@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94AF6EE82BC3D32900A04496 /* VacancyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EE72BC3D32900A04496 /* VacancyCardView.swift */; };
 		94D69A782BC1334C0076C949 /* effectmobApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A772BC1334C0076C949 /* effectmobApp.swift */; };
 		94D69A7A2BC1334C0076C949 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A792BC1334C0076C949 /* ContentView.swift */; };
 		94D69A7C2BC1334E0076C949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D69A7B2BC1334E0076C949 /* Assets.xcassets */; };
@@ -35,9 +36,19 @@
 		94D69ACA2BC298BB0076C949 /* ConfirmEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AC92BC298BB0076C949 /* ConfirmEmailViewModel.swift */; };
 		94D69ACC2BC2A5100076C949 /* ConfirmEmailModulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69ACB2BC2A5100076C949 /* ConfirmEmailModulView.swift */; };
 		94D69ACE2BC2A8F60076C949 /* UserLoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69ACD2BC2A8F50076C949 /* UserLoginData.swift */; };
+		94D69AD12BC2D1450076C949 /* FinderFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AD02BC2D1450076C949 /* FinderFlowCoordinator.swift */; };
+		94D69AD42BC2D2E50076C949 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AD32BC2D2E50076C949 /* Models.swift */; };
+		94D69AD92BC2D55E0076C949 /* dataFromServer.json in Resources */ = {isa = PBXBuildFile; fileRef = 94D69AD82BC2D55E0076C949 /* dataFromServer.json */; };
+		94D69ADC2BC2D5B70076C949 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69ADB2BC2D5B70076C949 /* NetworkService.swift */; };
+		94D69ADE2BC2DD930076C949 /* JobFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69ADD2BC2DD930076C949 /* JobFeedView.swift */; };
+		94D69AE02BC2DDA20076C949 /* JobFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69ADF2BC2DDA20076C949 /* JobFeedViewModel.swift */; };
+		94D69AE22BC2DDC80076C949 /* VacancyFeedModulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AE12BC2DDC80076C949 /* VacancyFeedModulView.swift */; };
+		94D69AE52BC2E5FB0076C949 /* DismissingKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AE42BC2E5FB0076C949 /* DismissingKeyboard.swift */; };
+		94D69AE72BC2E9B80076C949 /* SuggestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AE62BC2E9B80076C949 /* SuggestionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94AF6EE72BC3D32900A04496 /* VacancyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyCardView.swift; sourceTree = "<group>"; };
 		94D69A742BC1334C0076C949 /* effectmob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = effectmob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D69A772BC1334C0076C949 /* effectmobApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = effectmobApp.swift; sourceTree = "<group>"; };
 		94D69A792BC1334C0076C949 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +78,15 @@
 		94D69AC92BC298BB0076C949 /* ConfirmEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmEmailViewModel.swift; sourceTree = "<group>"; };
 		94D69ACB2BC2A5100076C949 /* ConfirmEmailModulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmEmailModulView.swift; sourceTree = "<group>"; };
 		94D69ACD2BC2A8F50076C949 /* UserLoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginData.swift; sourceTree = "<group>"; };
+		94D69AD02BC2D1450076C949 /* FinderFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderFlowCoordinator.swift; sourceTree = "<group>"; };
+		94D69AD32BC2D2E50076C949 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		94D69AD82BC2D55E0076C949 /* dataFromServer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dataFromServer.json; sourceTree = "<group>"; };
+		94D69ADB2BC2D5B70076C949 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		94D69ADD2BC2DD930076C949 /* JobFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobFeedView.swift; sourceTree = "<group>"; };
+		94D69ADF2BC2DDA20076C949 /* JobFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobFeedViewModel.swift; sourceTree = "<group>"; };
+		94D69AE12BC2DDC80076C949 /* VacancyFeedModulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyFeedModulView.swift; sourceTree = "<group>"; };
+		94D69AE42BC2E5FB0076C949 /* DismissingKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissingKeyboard.swift; sourceTree = "<group>"; };
+		94D69AE62BC2E9B80076C949 /* SuggestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +119,17 @@
 		94D69A762BC1334C0076C949 /* effectmob */ = {
 			isa = PBXGroup;
 			children = (
+				94D69A772BC1334C0076C949 /* effectmobApp.swift */,
+				94D69AE32BC2E5ED0076C949 /* ViewModifiers */,
+				94D69ADA2BC2D58E0076C949 /* NetworkService */,
+				94D69AD52BC2D4A70076C949 /* Resources */,
+				94D69AD22BC2D2DA0076C949 /* Models */,
+				94D69ACF2BC2D0EA0076C949 /* Finder */,
 				94D69AB32BC152AE0076C949 /* Extensions */,
 				94D69A9E2BC13C050076C949 /* Login */,
 				94D69A9D2BC13AC20076C949 /* Home */,
 				94D69A9C2BC13AB70076C949 /* App */,
 				94D69A8B2BC136230076C949 /* User */,
-				94D69A772BC1334C0076C949 /* effectmobApp.swift */,
 				94D69A7B2BC1334E0076C949 /* Assets.xcassets */,
 				94D69A7D2BC1334E0076C949 /* Preview Content */,
 			);
@@ -211,6 +236,51 @@
 			path = ConfirmEmail;
 			sourceTree = "<group>";
 		};
+		94D69ACF2BC2D0EA0076C949 /* Finder */ = {
+			isa = PBXGroup;
+			children = (
+				94D69AD02BC2D1450076C949 /* FinderFlowCoordinator.swift */,
+				94D69ADD2BC2DD930076C949 /* JobFeedView.swift */,
+				94D69ADF2BC2DDA20076C949 /* JobFeedViewModel.swift */,
+				94D69AE12BC2DDC80076C949 /* VacancyFeedModulView.swift */,
+				94D69AE62BC2E9B80076C949 /* SuggestionView.swift */,
+				94AF6EE72BC3D32900A04496 /* VacancyCardView.swift */,
+			);
+			path = Finder;
+			sourceTree = "<group>";
+		};
+		94D69AD22BC2D2DA0076C949 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				94D69AD32BC2D2E50076C949 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		94D69AD52BC2D4A70076C949 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				94D69AD82BC2D55E0076C949 /* dataFromServer.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		94D69ADA2BC2D58E0076C949 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				94D69ADB2BC2D5B70076C949 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		94D69AE32BC2E5ED0076C949 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				94D69AE42BC2E5FB0076C949 /* DismissingKeyboard.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -269,6 +339,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D69AD92BC2D55E0076C949 /* dataFromServer.json in Resources */,
 				94D69A7F2BC1334E0076C949 /* Preview Assets.xcassets in Resources */,
 				94D69A7C2BC1334E0076C949 /* Assets.xcassets in Resources */,
 			);
@@ -283,16 +354,20 @@
 			files = (
 				94D69AC22BC18AC90076C949 /* EnterConfirmNumberTextField.swift in Sources */,
 				94D69A972BC136B90076C949 /* UserDetailsView.swift in Sources */,
+				94D69AE72BC2E9B80076C949 /* SuggestionView.swift in Sources */,
 				94D69A9B2BC136D70076C949 /* Profile.swift in Sources */,
 				94D69A912BC1366E0076C949 /* UserListView.swift in Sources */,
 				94D69AB52BC152C00076C949 /* Color+extensions.swift in Sources */,
 				94D69ABC2BC170220076C949 /* String+extensions.swift in Sources */,
+				94D69AD12BC2D1450076C949 /* FinderFlowCoordinator.swift in Sources */,
 				94D69ACC2BC2A5100076C949 /* ConfirmEmailModulView.swift in Sources */,
 				94D69A932BC1367C0076C949 /* UserListViewModel.swift in Sources */,
 				94D69A992BC136CB0076C949 /* UserDetailViewModel.swift in Sources */,
+				94D69AE22BC2DDC80076C949 /* VacancyFeedModulView.swift in Sources */,
 				94D69A862BC135090076C949 /* CoordinatorApp.swift in Sources */,
 				94D69AB72BC158380076C949 /* EnterEmailTextField.swift in Sources */,
 				94D69AA02BC13C210076C949 /* LoginFlowCoordinator.swift in Sources */,
+				94D69AE02BC2DDA20076C949 /* JobFeedViewModel.swift in Sources */,
 				94D69ACE2BC2A8F60076C949 /* UserLoginData.swift in Sources */,
 				94D69A882BC135AC0076C949 /* AppCoordinator.swift in Sources */,
 				94D69ACA2BC298BB0076C949 /* ConfirmEmailViewModel.swift in Sources */,
@@ -302,11 +377,16 @@
 				94D69AA22BC13C9F0076C949 /* EnterEmailView.swift in Sources */,
 				94D69A7A2BC1334C0076C949 /* ContentView.swift in Sources */,
 				94D69A952BC136870076C949 /* User.swift in Sources */,
+				94D69ADE2BC2DD930076C949 /* JobFeedView.swift in Sources */,
 				94D69A8F2BC1365B0076C949 /* UserFlowCoordinator.swift in Sources */,
 				94D69ABE2BC1827F0076C949 /* FindEmployeesModulView.swift in Sources */,
 				94D69A8A2BC135F40076C949 /* HomeView.swift in Sources */,
 				94D69A782BC1334C0076C949 /* effectmobApp.swift in Sources */,
+				94AF6EE82BC3D32900A04496 /* VacancyCardView.swift in Sources */,
+				94D69ADC2BC2D5B70076C949 /* NetworkService.swift in Sources */,
 				94D69ABA2BC165EA0076C949 /* EnterEmailModulView.swift in Sources */,
+				94D69AE52BC2E5FB0076C949 /* DismissingKeyboard.swift in Sources */,
+				94D69AD42BC2D2E50076C949 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

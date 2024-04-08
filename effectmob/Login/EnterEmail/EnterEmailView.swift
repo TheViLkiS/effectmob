@@ -34,6 +34,7 @@ struct EnterEmailView: View {
             Spacer()
         }
         .background(.black)
+        .modifier(DismissingKeyboard())
     }
 }
 #Preview {

@@ -52,6 +52,8 @@ struct EnterEmailModulView: View {
             
             HStack {
                 Button(action: {
+                    print(NetworkService.fetchData())
+
                     isValidEmail = email.isValidEmailFormat()
                     guard isValidEmail else { return }
                     continueButtonTap(email)

@@ -55,7 +55,7 @@ final class LoginFlowCoordinator: ObservableObject, Hashable {
     private func enterEmailView() -> some View {
         let viewModel = EnterEmailViewModel()
         let enterEmailView = EnterEmailView(viewModel: viewModel)
-        bind(view: enterEmailView)
+//        bind(view: enterEmailView)
         return enterEmailView
     }
     
@@ -64,23 +64,23 @@ final class LoginFlowCoordinator: ObservableObject, Hashable {
         let confirmEmailView = ConfirmEmailView(viewModel: viewModel)
         return confirmEmailView
     }
-
-// MARK: View Bindings
-        private func bind(view: EnterEmailView) {
-            view.didClickContinueButton
-                .receive(on: DispatchQueue.main)
-                .sink(receiveValue: { [weak self] userLoginData in
-                    self?.userLoginData = userLoginData
-                    self?.showConfirmScreen()
-                })
-                .store(in: &cancellables)
-        }
-    }
-    
-    // MARK: Navigation Related Extensions
-    extension LoginFlowCoordinator {
-        private func showConfirmScreen() {
-            pushCoordinator.send(LoginFlowCoordinator(page: .confirmEmail, userLoginData: userLoginData))
-        }
-    }
+}
+//// MARK: View Bindings
+//        private func bind(view: EnterEmailView) {
+//            view.didClickContinueButton
+//                .receive(on: DispatchQueue.main)
+//                .sink(receiveValue: { [weak self] userLoginData in
+//                    self?.userLoginData = userLoginData
+//                    self?.showConfirmScreen()
+//                })
+//                .store(in: &cancellables)
+//        }
+//    }
+//    
+//    // MARK: Navigation Related Extensions
+//    extension LoginFlowCoordinator {
+//        private func showConfirmScreen() {
+//            pushCoordinator.send(LoginFlowCoordinator(page: .confirmEmail, userLoginData: userLoginData))
+//        }
+//    }
     

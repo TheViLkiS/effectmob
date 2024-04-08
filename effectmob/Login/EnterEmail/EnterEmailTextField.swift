@@ -31,6 +31,7 @@ struct EnterEmailTextField: View {
                     isEditing = editing
                 })
                 .font(.system(size: 14, weight: .regular, design: .default))
+                .padding(.trailing, 28)
                 .foregroundColor(.white)
                 .overlay(
                     HStack {

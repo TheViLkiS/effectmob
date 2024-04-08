@@ -7,6 +7,11 @@
 import SwiftUI
 import Combine
 
+enum FlowView {
+    case loginView
+    case jobFeedView
+}
+
 final class AppCoordinator: ObservableObject {
     @Published var path: NavigationPath
     private var cancellables = Set<AnyCancellable>()
@@ -16,8 +21,13 @@ final class AppCoordinator: ObservableObject {
     }
     
     @ViewBuilder
-    func build() -> some View {
-        loginView()
+    func build(view: FlowView) -> some View {
+        switch view {
+        case .jobFeedView:
+            jobFeedView()
+        case .loginView:
+            loginView()
+        }
     }
     
     private func push<T: Hashable>(_ coordinator: T) {
@@ -28,6 +38,11 @@ final class AppCoordinator: ObservableObject {
         let loginView = EnterEmailView(viewModel: EnterEmailViewModel())
         bind(view: loginView)
         return loginView
+    }
+    
+    private func jobFeedView() -> some View {
+        let jobFeedView = JobFeedView(viewModel: JobFeedViewModel(jobSearchData: NetworkService.fetchData() ?? JobSearchData(offers: [], vacancies: [])))
+        return jobFeedView
     }
     
     // MARK: Flow Control Methods
@@ -43,6 +58,10 @@ final class AppCoordinator: ObservableObject {
         self.push(loginFlowCoordinator)
     }
     
+    func jobFeedFlow(page: FindJobPage) {
+        let jobFeedFlowCoordinator = FinderFlowCoordinator(page: page)
+        self.push(jobFeedFlowCoordinator)
+    }
     
     private func profileFlow() {
 //        let profileFlowCoordinator = ProfileFlowCoordinator(page: .main)
@@ -58,22 +77,22 @@ final class AppCoordinator: ObservableObject {
                 self?.loginFlow(page: .confirmEmail, userLoginData: userLoginData)
             })
             .store(in: &cancellables)
-        view.didClickMenuItem
-            .receive(on: DispatchQueue.main)
-                        .sink(receiveValue: { [weak self] item in
-                            switch item {
-                            case "Users":
-                                self?.usersFlow()
-                            case "Settings":
-                                break
-//                                self?.settingsFlow()
-                            case "Profile":
-                                self?.profileFlow()
-                            default:
-                                break
-                            }
-                        })
-                        .store(in: &cancellables)
+//        view.didClickMenuItem
+//            .receive(on: DispatchQueue.main)
+//                        .sink(receiveValue: { [weak self] item in
+//                            switch item {
+//                            case "Users":
+//                                self?.usersFlow()
+//                            case "Settings":
+//                                break
+////                                self?.settingsFlow()
+//                            case "Profile":
+//                                self?.profileFlow()
+//                            default:
+//                                break
+//                            }
+//                        })
+//                        .store(in: &cancellables)
         
     }
     
