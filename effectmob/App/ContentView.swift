@@ -18,6 +18,9 @@ struct ContentView: View {
                     .navigationDestination(for: FinderFlowCoordinator.self) { coordinator in
                         coordinator.build()
                     }
+                    .navigationDestination(for: VacancyFlowCoordinator.self) { coordinator in
+                        coordinator.build()
+                    }
             }
                         .tabItem {
                             Image("findTabbarIcon")

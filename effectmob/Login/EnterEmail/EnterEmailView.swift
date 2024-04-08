@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 
 struct EnterEmailView: View {
-    let didClickMenuItem = PassthroughSubject<String, Never>()
+//    let didClickMenuItem = PassthroughSubject<String, Never>()
 
     @StateObject var viewModel: EnterEmailViewModel
     let didClickContinueButton = PassthroughSubject<UserLoginData, Never>()

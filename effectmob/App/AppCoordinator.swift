@@ -10,6 +10,7 @@ import Combine
 enum FlowView {
     case loginView
     case jobFeedView
+    case vacancy
 }
 
 final class AppCoordinator: ObservableObject {
@@ -27,6 +28,8 @@ final class AppCoordinator: ObservableObject {
             jobFeedView()
         case .loginView:
             loginView()
+        case .vacancy:
+            vacancyView()
         }
     }
     
@@ -42,7 +45,13 @@ final class AppCoordinator: ObservableObject {
     
     private func jobFeedView() -> some View {
         let jobFeedView = JobFeedView(viewModel: JobFeedViewModel(jobSearchData: NetworkService.fetchData() ?? JobSearchData(offers: [], vacancies: [])))
+        bind(view: jobFeedView)
         return jobFeedView
+    }
+    
+    private func vacancyView() -> some View {
+        let vacancyView = VacancyFullView(viewModel: VacancyViewModel(vacancy: NetworkService.fetchData()!.vacancies.first!))
+        return vacancyView
     }
     
     // MARK: Flow Control Methods
@@ -60,7 +69,14 @@ final class AppCoordinator: ObservableObject {
     
     func jobFeedFlow(page: FindJobPage) {
         let jobFeedFlowCoordinator = FinderFlowCoordinator(page: page)
+        self.bind(jobFeedCoordinator: jobFeedFlowCoordinator)
         self.push(jobFeedFlowCoordinator)
+    }
+    
+    func vacancyFlow(vacancy: Vacancy) {
+        let vacancyFlowCoordinator = VacancyFlowCoordinator(page: .fullView, vacancyData: vacancy)
+        self.bind(vacancyCoordinator: vacancyFlowCoordinator)
+        self.push(vacancyFlowCoordinator)
     }
     
     private func profileFlow() {
@@ -96,6 +112,15 @@ final class AppCoordinator: ObservableObject {
         
     }
     
+    private func bind(view: JobFeedView) {
+        view.didClickOnVacancy
+            .receive(on: DispatchQueue.main)
+            .sink(receiveValue: { [weak self] vacancy in
+                self?.vacancyFlow(vacancy: vacancy)
+            })
+            .store(in: &cancellables)
+    }
+    
     // MARK: Flow Coordinator Bindings
     private func bind(userCoordinator: UserFlowCoordinator) {
         userCoordinator.pushCoordinator
@@ -108,6 +133,24 @@ final class AppCoordinator: ObservableObject {
     
     private func bind(loginCoordinator: LoginFlowCoordinator) {
         loginCoordinator.pushCoordinator
+            .receive(on: DispatchQueue.main)
+            .sink(receiveValue: { [weak self] coordinator in
+                self?.push(coordinator)
+            })
+            .store(in: &cancellables)
+    }
+    
+    private func bind(jobFeedCoordinator: FinderFlowCoordinator) {
+        jobFeedCoordinator.pushCoordinator
+            .receive(on: DispatchQueue.main)
+            .sink(receiveValue: { [weak self] coordinator in
+                self?.push(coordinator)
+            })
+            .store(in: &cancellables)
+    }
+    
+    private func bind(vacancyCoordinator: VacancyFlowCoordinator) {
+        vacancyCoordinator.pushCoordinator
             .receive(on: DispatchQueue.main)
             .sink(receiveValue: { [weak self] coordinator in
                 self?.push(coordinator)

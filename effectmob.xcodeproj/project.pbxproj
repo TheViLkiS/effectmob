@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		94AF6EE82BC3D32900A04496 /* VacancyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EE72BC3D32900A04496 /* VacancyCardView.swift */; };
+		94AF6EEB2BC3EF7B00A04496 /* VacancyFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EEA2BC3EF7B00A04496 /* VacancyFlowCoordinator.swift */; };
+		94AF6EED2BC3EF9100A04496 /* VacancyFullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EEC2BC3EF9100A04496 /* VacancyFullView.swift */; };
+		94AF6EEF2BC3EF9F00A04496 /* VacancyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EEE2BC3EF9F00A04496 /* VacancyViewModel.swift */; };
+		94AF6EF12BC3FB4200A04496 /* Array+String+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EF02BC3FB4200A04496 /* Array+String+extensions.swift */; };
 		94D69A782BC1334C0076C949 /* effectmobApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A772BC1334C0076C949 /* effectmobApp.swift */; };
 		94D69A7A2BC1334C0076C949 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A792BC1334C0076C949 /* ContentView.swift */; };
 		94D69A7C2BC1334E0076C949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D69A7B2BC1334E0076C949 /* Assets.xcassets */; };
@@ -49,6 +53,10 @@
 
 /* Begin PBXFileReference section */
 		94AF6EE72BC3D32900A04496 /* VacancyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyCardView.swift; sourceTree = "<group>"; };
+		94AF6EEA2BC3EF7B00A04496 /* VacancyFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyFlowCoordinator.swift; sourceTree = "<group>"; };
+		94AF6EEC2BC3EF9100A04496 /* VacancyFullView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyFullView.swift; sourceTree = "<group>"; };
+		94AF6EEE2BC3EF9F00A04496 /* VacancyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyViewModel.swift; sourceTree = "<group>"; };
+		94AF6EF02BC3FB4200A04496 /* Array+String+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+String+extensions.swift"; sourceTree = "<group>"; };
 		94D69A742BC1334C0076C949 /* effectmob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = effectmob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D69A772BC1334C0076C949 /* effectmobApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = effectmobApp.swift; sourceTree = "<group>"; };
 		94D69A792BC1334C0076C949 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +108,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94AF6EE92BC3EF6200A04496 /* Vacancy */ = {
+			isa = PBXGroup;
+			children = (
+				94AF6EEA2BC3EF7B00A04496 /* VacancyFlowCoordinator.swift */,
+				94AF6EEC2BC3EF9100A04496 /* VacancyFullView.swift */,
+				94AF6EEE2BC3EF9F00A04496 /* VacancyViewModel.swift */,
+			);
+			path = Vacancy;
+			sourceTree = "<group>";
+		};
 		94D69A6B2BC1334C0076C949 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +137,7 @@
 		94D69A762BC1334C0076C949 /* effectmob */ = {
 			isa = PBXGroup;
 			children = (
+				94AF6EE92BC3EF6200A04496 /* Vacancy */,
 				94D69A772BC1334C0076C949 /* effectmobApp.swift */,
 				94D69AE32BC2E5ED0076C949 /* ViewModifiers */,
 				94D69ADA2BC2D58E0076C949 /* NetworkService */,
@@ -209,6 +228,7 @@
 				94D69AB42BC152C00076C949 /* Color+extensions.swift */,
 				94D69ABB2BC170220076C949 /* String+extensions.swift */,
 				94D69AC32BC1B0330076C949 /* Character+extensions.swift */,
+				94AF6EF02BC3FB4200A04496 /* Array+String+extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -359,15 +379,19 @@
 				94D69A912BC1366E0076C949 /* UserListView.swift in Sources */,
 				94D69AB52BC152C00076C949 /* Color+extensions.swift in Sources */,
 				94D69ABC2BC170220076C949 /* String+extensions.swift in Sources */,
+				94AF6EED2BC3EF9100A04496 /* VacancyFullView.swift in Sources */,
 				94D69AD12BC2D1450076C949 /* FinderFlowCoordinator.swift in Sources */,
 				94D69ACC2BC2A5100076C949 /* ConfirmEmailModulView.swift in Sources */,
 				94D69A932BC1367C0076C949 /* UserListViewModel.swift in Sources */,
 				94D69A992BC136CB0076C949 /* UserDetailViewModel.swift in Sources */,
 				94D69AE22BC2DDC80076C949 /* VacancyFeedModulView.swift in Sources */,
+				94AF6EEB2BC3EF7B00A04496 /* VacancyFlowCoordinator.swift in Sources */,
 				94D69A862BC135090076C949 /* CoordinatorApp.swift in Sources */,
 				94D69AB72BC158380076C949 /* EnterEmailTextField.swift in Sources */,
 				94D69AA02BC13C210076C949 /* LoginFlowCoordinator.swift in Sources */,
+				94AF6EF12BC3FB4200A04496 /* Array+String+extensions.swift in Sources */,
 				94D69AE02BC2DDA20076C949 /* JobFeedViewModel.swift in Sources */,
+				94AF6EEF2BC3EF9F00A04496 /* VacancyViewModel.swift in Sources */,
 				94D69ACE2BC2A8F60076C949 /* UserLoginData.swift in Sources */,
 				94D69A882BC135AC0076C949 /* AppCoordinator.swift in Sources */,
 				94D69ACA2BC298BB0076C949 /* ConfirmEmailViewModel.swift in Sources */,

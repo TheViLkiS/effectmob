@@ -12,7 +12,8 @@ struct JobFeedView: View {
     let didClickMenuItem = PassthroughSubject<String, Never>()
     @State var finderText: String = ""
     @StateObject var viewModel: JobFeedViewModel
-    let didClickContinueButton = PassthroughSubject<UserLoginData, Never>()
+//    let didClickContinueButton = PassthroughSubject<UserLoginData, Never>()
+    let didClickOnVacancy = PassthroughSubject<Vacancy, Never>()
     
     var body: some View {
         VStack(spacing: 22) {
@@ -26,7 +27,6 @@ struct JobFeedView: View {
                     .padding(.trailing, 8)
                     .padding(.leading, 16)
                 Button(action: {
-                    print(NetworkService.fetchData())
                 }) {
                     Image("filterJobFeedIcon")
                         .frame(width: 40, height: 40, alignment: .center)
@@ -55,6 +55,9 @@ struct JobFeedView: View {
                     VacancyCardView(vacancy: vacancy)
                                         .padding(.horizontal, 16)
                                         .padding(.top, 8)
+                                        .onTapGesture {
+                                            didClickOnVacancy.send(vacancy)
+                                        }
                 }
                 Button(action: {
                     print("Кнопка Откликнуться нажата")
