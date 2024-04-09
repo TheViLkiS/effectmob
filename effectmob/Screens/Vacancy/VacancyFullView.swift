@@ -37,7 +37,7 @@ struct VacancyFullView: View {
                     
                     AdressMapView(company: vacancy.company, address: vacancy.address)
                     
-                    if let description = vacancy.description {
+                    if let description = vacancy.descriptionText {
                         Text(description)
                                 .font(.system(size: 14, weight: .regular, design: .default))
                                 .foregroundColor(.white)
