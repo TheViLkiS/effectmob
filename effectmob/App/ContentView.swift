@@ -8,56 +8,45 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var appCoordinator = AppCoordinator(path: NavigationPath())
-    @State private var selectedTab = 4
+//    @StateObject private var appCoordinator = AppCoordinator(path: NavigationPath())
+//    @State private var selectedTab = 4
+    
+    @ObservedObject var coordinator: HomeCoordinator
 
     var body: some View {
-        TabView(selection: $selectedTab) {
-            NavigationStack(path: $appCoordinator.path) {
-                appCoordinator.build(view: .jobFeedView)
-                    .navigationDestination(for: FinderFlowCoordinator.self) { coordinator in
-                        coordinator.build()
-                    }
-                    .navigationDestination(for: VacancyFlowCoordinator.self) { coordinator in
-                        coordinator.build()
-                    }
-            }
+        TabView(selection: $coordinator.tab) {
+            JobFeedCoordinatorView(coordinator: coordinator.jobFeedCoordinator)
                         .tabItem {
                             Image("findTabbarIcon")
-                                .renderingMode(selectedTab == 0 ? .template : .original)
+                                .renderingMode(coordinator.tab == HomeTab.jobFeed ? .template : .original)
                             Text("Поиск")
                         }
                         .tag(0)
                     Text("Избранное экран")
                         .tabItem {
                             Image("favoriteNormalTabbarIcon")
-                                .renderingMode(selectedTab == 1 ? .template : .original)
+                                .renderingMode(coordinator.tab == HomeTab.favorite ? .template : .original)
                             Text("Избранное")
                         }
                         .tag(1)
             Text("Отклики экран")
                 .tabItem {
                     Image("emailPlaceholderImage")
-                        .renderingMode(selectedTab == 2 ? .template : .original)
+                        .renderingMode(coordinator.tab == HomeTab.responses ? .template : .original)
                     Text("Отклики")
                 }
                 .tag(2)
             Text("Сообщения экран")
                 .tabItem {
                     Image("messageTabbarIcon")
-                        .renderingMode(selectedTab == 3 ? .template : .original)
+                        .renderingMode(coordinator.tab == HomeTab.messages ? .template : .original)
                     Text("Сообщения")
                 }
                 .tag(3)
-            NavigationStack(path: $appCoordinator.path) {
-                appCoordinator.build(view: .loginView)
-                    .navigationDestination(for: LoginFlowCoordinator.self) { coordinator in
-                        coordinator.build()
-                    }
-            }
+            Text("Избранное экран")
                 .tabItem {
                     Image("profileTabbarIcon")
-                        .renderingMode(selectedTab == 4 ? .template : .original)
+                        .renderingMode(coordinator.tab == HomeTab.profile ? .template : .original)
                     Text("Профиль")
                 }
                 .tag(4)
@@ -70,10 +59,10 @@ struct ContentView: View {
             UITabBar.appearance().layer.borderColor = UIColor.clear.cgColor
             UITabBar.appearance().clipsToBounds = true
                 }
-        .environmentObject(appCoordinator)
+//        .environmentObject(appCoordinator)
     }
 }
 
-#Preview {
-    ContentView()
-}
+//#Preview {
+//    ContentView(coordinator: HomeCoordinator(networkService: NetworkService()))
+//}

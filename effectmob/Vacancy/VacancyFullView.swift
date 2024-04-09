@@ -133,9 +133,9 @@ struct VacancyFullView: View {
     }
 }
 
-#Preview {
-    VacancyFullView(viewModel: VacancyViewModel(vacancy: NetworkService.fetchData()!.vacancies.first!))
-}
+//#Preview {
+//    VacancyFullView(viewModel: VacancyViewModel(vacancy: NetworkService.fetchData()!.vacancies.first!))
+//}
 
 struct AdressMapView: View {
     let company: String

@@ -8,9 +8,22 @@
 import Foundation
 
 final class JobFeedViewModel: ObservableObject {
-    let jobSearchData: JobSearchData
+    @Published var jobSearchData: JobSearchData
     
-    init(jobSearchData: JobSearchData) {
-        self.jobSearchData = jobSearchData
+    private let networkService: NetworkService
+    private unowned let coordinator: JobFeedCoordinator
+    
+    init(
+        networkService: NetworkService,
+        coordinator: JobFeedCoordinator
+    ) {
+        self.networkService = networkService
+        self.coordinator = coordinator
+        
+        self.jobSearchData = networkService.fetchData()
+    }
+    
+    func open(_ vacancy: Vacancy) {
+        self.coordinator.open(vacancy)
     }
 }
