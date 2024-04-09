@@ -1,14 +1,14 @@
 //
-//  JobFeedViewModel.swift
+//  FavoriteViewModel.swift
 //  effectmob
 //
-//  Created by Дмитрий Гусев on 07.04.24.
+//  Created by Дмитрий Гусев on 09.04.24.
 //
 
 import Foundation
 import SwiftUI
 
-final class JobFeedViewModel: ObservableObject {
+final class FavoriteViewModel: ObservableObject {
     @Published var jobSearchData: JobSearchData
     
     private let networkService: NetworkService

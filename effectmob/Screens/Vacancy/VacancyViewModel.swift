@@ -10,9 +10,9 @@ import Foundation
 final class VacancyViewModel: ObservableObject {
     @Published var vacancy: Vacancy
     
-    private unowned let coordinator: JobFeedCoordinator
+    private unowned let coordinator: FeedCoordinator
     
-    init(vacancy: Vacancy, coordinator: JobFeedCoordinator) {
+    init(vacancy: Vacancy, coordinator: FeedCoordinator) {
         self.vacancy = vacancy
         self.coordinator = coordinator
     }

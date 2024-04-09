@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct VacancyCardView: View {
-    @State var vacancy: Vacancy
+    @Binding var vacancy: Vacancy
     
     var body: some View {
         ZStack(alignment: .topTrailing){

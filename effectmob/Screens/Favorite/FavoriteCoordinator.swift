@@ -1,5 +1,5 @@
 //
-//  JobFeedCoordinator.swift
+//  FavoriteCoordinator.swift
 //  effectmob
 //
 //  Created by Дмитрий Гусев on 09.04.24.
@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-class JobFeedCoordinator: ObservableObject, Identifiable {
+class FavoriteCoordinator: ObservableObject, Identifiable {
 
     // MARK: Stored Properties
 
-    @Published var viewModel: JobFeedViewModel!
+    @Published var viewModel: FavoriteViewModel!
     @Published var vacancyViewModel: VacancyViewModel?
 
     private let networkService: NetworkService
@@ -24,7 +24,7 @@ class JobFeedCoordinator: ObservableObject, Identifiable {
          parent: HomeCoordinator) {
         self.parent = parent
         self.networkService = networkService
-        
+
         self.viewModel = .init(
             networkService: networkService,
             coordinator: self
@@ -33,7 +33,7 @@ class JobFeedCoordinator: ObservableObject, Identifiable {
     }
 }
 
-extension JobFeedCoordinator: FeedCoordinator {
+extension FavoriteCoordinator: FeedCoordinator {
     func open(_ vacancy: Vacancy) {
         self.vacancyViewModel = .init(vacancy: vacancy, coordinator: self)
     }

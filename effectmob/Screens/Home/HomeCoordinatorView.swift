@@ -35,7 +35,7 @@ struct HomeCoordinatorView: View {
                 }
             .tag(HomeTab.jobFeed)
             
-            Text("Избранное экран")
+            FavoriteCoordinatorView(coordinator: coordinator.favoriteCoordinator)
                 .tabItem {
                     Image("favoriteNormalTabbarIcon")
                         .renderingMode(coordinator.tab == HomeTab.favorite ? .template : .original)

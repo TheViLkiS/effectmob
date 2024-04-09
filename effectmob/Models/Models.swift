@@ -7,9 +7,14 @@
 
 import Foundation
 
-struct JobSearchData: Codable {
+class JobSearchData: Codable, ObservableObject {
     let offers: [Offer]
-    let vacancies: [Vacancy]
+    var vacancies: [Vacancy]
+    
+    init(offers: [Offer], vacancies: [Vacancy]) {
+        self.offers = offers
+        self.vacancies = vacancies
+    }
 }
 
 struct Offer: Identifiable, Codable {

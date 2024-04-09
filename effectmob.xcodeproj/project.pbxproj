@@ -16,6 +16,10 @@
 		94AF6EF72BC52AF300A04496 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EF62BC52AF300A04496 /* HomeCoordinator.swift */; };
 		94AF6EFA2BC5304100A04496 /* AdressMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EF92BC5304100A04496 /* AdressMapView.swift */; };
 		94AF6EFC2BC5306900A04496 /* LookingAppliedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EFB2BC5306900A04496 /* LookingAppliedView.swift */; };
+		94AF6EFF2BC545DD00A04496 /* FavoriteCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EFE2BC545DD00A04496 /* FavoriteCoordinator.swift */; };
+		94AF6F012BC545F300A04496 /* FavoriteCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6F002BC545F300A04496 /* FavoriteCoordinatorView.swift */; };
+		94AF6F032BC5460700A04496 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6F022BC5460700A04496 /* FavoriteViewModel.swift */; };
+		94AF6F052BC549E100A04496 /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6F042BC549E100A04496 /* FeedCoordinator.swift */; };
 		94D69A7C2BC1334E0076C949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D69A7B2BC1334E0076C949 /* Assets.xcassets */; };
 		94D69A7F2BC1334E0076C949 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D69A7E2BC1334E0076C949 /* Preview Assets.xcassets */; };
 		94D69A862BC135090076C949 /* EffectMobApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A852BC135090076C949 /* EffectMobApp.swift */; };
@@ -52,6 +56,10 @@
 		94AF6EF62BC52AF300A04496 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		94AF6EF92BC5304100A04496 /* AdressMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressMapView.swift; sourceTree = "<group>"; };
 		94AF6EFB2BC5306900A04496 /* LookingAppliedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookingAppliedView.swift; sourceTree = "<group>"; };
+		94AF6EFE2BC545DD00A04496 /* FavoriteCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCoordinator.swift; sourceTree = "<group>"; };
+		94AF6F002BC545F300A04496 /* FavoriteCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCoordinatorView.swift; sourceTree = "<group>"; };
+		94AF6F022BC5460700A04496 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		94AF6F042BC549E100A04496 /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
 		94D69A742BC1334C0076C949 /* effectmob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = effectmob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D69A7B2BC1334E0076C949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94D69A7E2BC1334E0076C949 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -104,12 +112,23 @@
 		94AF6EF82BC52C3D00A04496 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				94AF6EFD2BC545C000A04496 /* Favorite */,
 				94D69A9D2BC13AC20076C949 /* Home */,
 				94D69A9E2BC13C050076C949 /* Login */,
 				94D69ACF2BC2D0EA0076C949 /* JobFeed */,
 				94AF6EE92BC3EF6200A04496 /* Vacancy */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		94AF6EFD2BC545C000A04496 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				94AF6EFE2BC545DD00A04496 /* FavoriteCoordinator.swift */,
+				94AF6F002BC545F300A04496 /* FavoriteCoordinatorView.swift */,
+				94AF6F022BC5460700A04496 /* FavoriteViewModel.swift */,
+			);
+			path = Favorite;
 			sourceTree = "<group>";
 		};
 		94D69A6B2BC1334C0076C949 = {
@@ -230,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				94D69AD32BC2D2E50076C949 /* Models.swift */,
+				94AF6F042BC549E100A04496 /* FeedCoordinator.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -335,6 +355,7 @@
 				94D69AE72BC2E9B80076C949 /* SuggestionView.swift in Sources */,
 				94AF6EF32BC5222300A04496 /* JobFeedCoordinatorView.swift in Sources */,
 				94D69AB52BC152C00076C949 /* Color+extensions.swift in Sources */,
+				94AF6F052BC549E100A04496 /* FeedCoordinator.swift in Sources */,
 				94D69ABC2BC170220076C949 /* String+extensions.swift in Sources */,
 				94AF6EED2BC3EF9100A04496 /* VacancyFullView.swift in Sources */,
 				94AF6EF52BC5229400A04496 /* JobFeedCoordinator.swift in Sources */,
@@ -350,8 +371,11 @@
 				94D69AA42BC13D090076C949 /* LoginViewModel.swift in Sources */,
 				94D69AC42BC1B0330076C949 /* Character+extensions.swift in Sources */,
 				94D69AC02BC185FD0076C949 /* ConfirmEmailView.swift in Sources */,
+				94AF6F032BC5460700A04496 /* FavoriteViewModel.swift in Sources */,
 				94D69AA22BC13C9F0076C949 /* LoginCoordinatorView.swift in Sources */,
 				94D69ABE2BC1827F0076C949 /* FindEmployeesModulView.swift in Sources */,
+				94AF6F012BC545F300A04496 /* FavoriteCoordinatorView.swift in Sources */,
+				94AF6EFF2BC545DD00A04496 /* FavoriteCoordinator.swift in Sources */,
 				94D69A8A2BC135F40076C949 /* HomeCoordinatorView.swift in Sources */,
 				94AF6EE82BC3D32900A04496 /* VacancyCardView.swift in Sources */,
 				94D69ADC2BC2D5B70076C949 /* NetworkService.swift in Sources */,

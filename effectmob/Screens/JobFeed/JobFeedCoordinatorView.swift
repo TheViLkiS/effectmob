@@ -53,9 +53,9 @@ struct JobFeedCoordinatorView: View {
                     Spacer()
                 }
                 ScrollView(.vertical) {
-                    ForEach(coordinator.viewModel.jobSearchData.vacancies) { vacancy in
-                        NavigationLink(destination: vacancyView(vacancy)) {
-                            VacancyCardView(vacancy: vacancy)
+                    ForEach(Array(coordinator.viewModel.jobSearchData.vacancies.enumerated()), id: \.element.id) { index, vacancy in
+                        NavigationLink(destination: vacancyView(index)) {
+                            VacancyCardView(vacancy: $coordinator.viewModel.jobSearchData.vacancies[index])
                                 .padding(.horizontal, 16)
                                 .padding(.top, 8)
                         }
@@ -84,9 +84,9 @@ struct JobFeedCoordinatorView: View {
     }
 
     @ViewBuilder
-    private func vacancyView(_ vacancy: Vacancy) -> some View {
-        let viewModel = VacancyViewModel(vacancy: vacancy, coordinator: coordinator)
-        VacancyFullView(viewModel: viewModel)
+    private func vacancyView(_ index: Int) -> some View {
+//        let viewModel = VacancyViewModel(vacancy: vacancy, coordinator: coordinator)
+        VacancyFullView(vacancy: $coordinator.viewModel.jobSearchData.vacancies[index])
     }
 
 }

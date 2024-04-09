@@ -9,23 +9,23 @@ import SwiftUI
 import Combine
 
 struct VacancyFullView: View {
-    @ObservedObject var viewModel: VacancyViewModel
+    @Binding var vacancy: Vacancy
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 16) {
-                    Text(viewModel.vacancy.title)
+                    Text(vacancy.title)
                         .font(.system(size: 22, weight: .semibold, design: .default))
                         .foregroundColor(.white)
-                    Text(viewModel.vacancy.salary.full)
+                    Text(vacancy.salary.full)
                         .font(.system(size: 14, weight: .regular, design: .default))
                         .foregroundColor(.white)
                     VStack(alignment: .leading, spacing: 0) {
-                        Text("Требуемый опыт: \(viewModel.vacancy.experience.text)")
+                        Text("Требуемый опыт: \(vacancy.experience.text)")
                             .font(.system(size: 14, weight: .regular, design: .default))
                             .foregroundColor(.white)
-                        Text(viewModel.vacancy.schedules.capitalizedSentence())
+                        Text(vacancy.schedules.capitalizedSentence())
                         .font(.system(size: 14, weight: .regular, design: .default))
                         .foregroundColor(.white)
                     }
@@ -35,9 +35,9 @@ struct VacancyFullView: View {
                     }
                     .padding(.top, 27)
                     
-                    AdressMapView(company: viewModel.vacancy.company, address: viewModel.vacancy.address)
+                    AdressMapView(company: vacancy.company, address: vacancy.address)
                     
-                    if let description = viewModel.vacancy.description {
+                    if let description = vacancy.description {
                         Text(description)
                                 .font(.system(size: 14, weight: .regular, design: .default))
                                 .foregroundColor(.white)
@@ -47,7 +47,7 @@ struct VacancyFullView: View {
                         .font(.system(size: 20, weight: .semibold, design: .default))
                         .foregroundColor(.white)
                     
-                    Text(viewModel.vacancy.responsibilities)
+                    Text(vacancy.responsibilities)
                             .font(.system(size: 14, weight: .regular, design: .default))
                             .foregroundColor(.white)
                     
@@ -60,7 +60,7 @@ struct VacancyFullView: View {
                             .foregroundColor(Color(rgb: 0x858688))
                     }
                     .padding(.top, 28)
-                    ForEach(viewModel.vacancy.questions, id: \.self) { question in
+                    ForEach(vacancy.questions, id: \.self) { question in
                         Button(action: {
                         }) {
                             Text(question)
@@ -117,9 +117,9 @@ struct VacancyFullView: View {
                                     Image("shareIcon")
                                 }
                                 Button(action: {
-                                    viewModel.vacancy.isFavorite.toggle()
+                                    vacancy.isFavorite.toggle()
                                 }) {
-                                    Image(viewModel.vacancy.isFavorite ? "filledHearth": "favoriteNormalTabbarIcon")
+                                    Image(vacancy.isFavorite ? "filledHearth": "favoriteNormalTabbarIcon")
                                 }
                             }
                         }
