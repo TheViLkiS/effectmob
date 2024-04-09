@@ -7,10 +7,10 @@
 import SwiftUI
 
 struct EnterEmailModulView: View {
-    @State var email: String = ""
+    @State var userLoginData: UserLoginData
     @State var isValidEmail: Bool = true
     
-    var continueButtonTap: (String) -> Void
+    var continueButtonTap: (UserLoginData) -> Void
     var loginWithPasswordButtonTap: () -> Void
     
     var body: some View {
@@ -23,7 +23,7 @@ struct EnterEmailModulView: View {
             }
             
             VStack(alignment: .leading, spacing: 14) {
-                EnterEmailTextField(text: $email, placeholder: "Электронная почта", imageName: "emailPlaceholderImage")
+                EnterEmailTextField(text: $userLoginData.email, placeholder: "Электронная почта", imageName: "emailPlaceholderImage")
                         .padding()
                         .frame(height: 40, alignment: .center)
                         .background(Color(rgb: 0x313234))
@@ -37,7 +37,7 @@ struct EnterEmailModulView: View {
                                 }
                             }
                         )
-                        .onChange(of: email) { _,_ in
+                        .onChange(of: userLoginData.email) { _,_ in
                             isValidEmail = true
                         }
                 ZStack {
@@ -52,9 +52,9 @@ struct EnterEmailModulView: View {
             
             HStack {
                 Button(action: {
-                    isValidEmail = email.isValidEmailFormat()
+                    isValidEmail = userLoginData.email.isValidEmailFormat()
                     guard isValidEmail else { return }
-                    continueButtonTap(email)
+                    continueButtonTap(userLoginData)
                 }) {
                     Text("Продолжить")
                         .font(.system(size: 14, weight: .regular, design: .default))

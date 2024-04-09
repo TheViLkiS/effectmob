@@ -12,7 +12,7 @@ struct EffectMobApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HomeCoordinatorView(coordinator: coordinator)
+            LoginCoordinatorView(homeCoordinator: coordinator)
         }
     }
 }

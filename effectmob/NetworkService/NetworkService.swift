@@ -26,7 +26,7 @@ final class NetworkService {
     }
     
     func fetchUserLoginData() -> UserLoginData {
-        UserLoginData(email: "test@mail.com", password: "password")
+        UserLoginData(email: "", password: "")
     }
     
     static func fetchData() -> JobSearchData? {

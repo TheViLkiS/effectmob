@@ -13,8 +13,6 @@ struct VacancyFullView: View {
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
-//        VStack(alignment: .leading, spacing: 10) {
-
         ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 16) {
                     Text(viewModel.vacancy.title)
@@ -32,8 +30,8 @@ struct VacancyFullView: View {
                         .foregroundColor(.white)
                     }
                     HStack {
-                        lookingAppliedView(type: .applied, number: 235)
-                        lookingAppliedView(type: .looking, number: 122)
+                        LookingAppliedView(type: .applied, number: 235)
+                        LookingAppliedView(type: .looking, number: 122)
                     }
                     .padding(.top, 27)
                     
@@ -91,16 +89,12 @@ struct VacancyFullView: View {
                     .padding(.bottom, 16)
                 }
             }
-//        }
         .padding(.horizontal, 16)
         .padding(.top, 16)
         .background(.black)
         .navigationBarBackButtonHidden(true)
         .navigationTitle("Detail Title")
-                    // 1
                     .toolbar {
-
-                        // 2
                         ToolbarItem(placement: .topBarLeading) {
                             Button {
                                 dismiss()
@@ -131,77 +125,4 @@ struct VacancyFullView: View {
                         }
                     }
     }
-}
-
-//#Preview {
-//    VacancyFullView(viewModel: VacancyViewModel(vacancy: NetworkService.fetchData()!.vacancies.first!))
-//}
-
-struct AdressMapView: View {
-    let company: String
-    let address: Address
-    
-    var body: some View {
-        VStack(alignment: .leading) {
-            HStack {
-                Text(company)
-                    .font(.system(size: 16, weight: .medium, design: .default))
-                    .foregroundColor(.white)
-                Image("approveCompanyIcon")
-            }
-            Image("googleMap")
-                .resizable()
-            Text([address.town, address.street, address.house].joined(separator: " ,"))
-                    .font(.system(size: 14, weight: .regular, design: .default))
-                    .foregroundColor(.white)
-        }
-        .padding(.horizontal, 16)
-        .padding(.vertical, 12)
-        .background(Color(rgb: 0x313234))
-        .cornerRadius(8)
-    }
-}
-
-struct lookingAppliedView: View {
-    let type: viewType
-    let number: Int
-    
-    enum viewType {
-        case looking
-        case applied
-    }
-    
-    var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
-            HStack(alignment: .top) {
-                VStack(alignment: .leading) {
-                    
-                    switch type {
-                    case .applied:
-                        Text("\(number) человек уже откликнулись")
-                            .font(.system(size: 14, weight: .medium, design: .default))
-                            .foregroundColor(.white)
-                    case .looking:
-                        Text("\(number) человека сейчас смотрят")
-                            .font(.system(size: 14, weight: .medium, design: .default))
-                            .foregroundColor(.white)
-                    }
-                    
-                }
-                Spacer()
-                switch type {
-                case .applied:
-                    Image("greenProfileCirlceIcon")
-                case .looking:
-                    Image("greenEyeCircleIcon")
-                }
-            }
-        }
-        .padding(8)
-        .frame(width: 160, height: 50, alignment: .center)
-        .background(Color(rgb: 0x015905))
-        .cornerRadius(8)
-        
-    }
-    
 }

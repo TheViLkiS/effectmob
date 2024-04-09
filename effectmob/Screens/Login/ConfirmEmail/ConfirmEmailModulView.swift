@@ -15,6 +15,8 @@ struct ConfirmEmailModulView: View {
     private var isAllNumbersInputed: Bool {
         !inputs.contains { $0.isEmpty }
     }
+    
+    var continueButtonTap: () -> Void
 
     private enum Field: Int, Hashable {
         case input1, input2, input3, input4
@@ -52,7 +54,7 @@ struct ConfirmEmailModulView: View {
             }
             
             Button(action: {
-                print("Кнопка 1 нажата")
+                continueButtonTap()
             }) {
                 Text("Подтвердить")
                     .font(.system(size: 16, weight: .semibold, design: .default))

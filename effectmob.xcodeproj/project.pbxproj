@@ -14,6 +14,8 @@
 		94AF6EF32BC5222300A04496 /* JobFeedCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EF22BC5222300A04496 /* JobFeedCoordinatorView.swift */; };
 		94AF6EF52BC5229400A04496 /* JobFeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EF42BC5229400A04496 /* JobFeedCoordinator.swift */; };
 		94AF6EF72BC52AF300A04496 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EF62BC52AF300A04496 /* HomeCoordinator.swift */; };
+		94AF6EFA2BC5304100A04496 /* AdressMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EF92BC5304100A04496 /* AdressMapView.swift */; };
+		94AF6EFC2BC5306900A04496 /* LookingAppliedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EFB2BC5306900A04496 /* LookingAppliedView.swift */; };
 		94D69A7C2BC1334E0076C949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D69A7B2BC1334E0076C949 /* Assets.xcassets */; };
 		94D69A7F2BC1334E0076C949 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D69A7E2BC1334E0076C949 /* Preview Assets.xcassets */; };
 		94D69A862BC135090076C949 /* EffectMobApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A852BC135090076C949 /* EffectMobApp.swift */; };
@@ -48,6 +50,8 @@
 		94AF6EF22BC5222300A04496 /* JobFeedCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobFeedCoordinatorView.swift; sourceTree = "<group>"; };
 		94AF6EF42BC5229400A04496 /* JobFeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobFeedCoordinator.swift; sourceTree = "<group>"; };
 		94AF6EF62BC52AF300A04496 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		94AF6EF92BC5304100A04496 /* AdressMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressMapView.swift; sourceTree = "<group>"; };
+		94AF6EFB2BC5306900A04496 /* LookingAppliedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookingAppliedView.swift; sourceTree = "<group>"; };
 		94D69A742BC1334C0076C949 /* effectmob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = effectmob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D69A7B2BC1334E0076C949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94D69A7E2BC1334E0076C949 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 			children = (
 				94AF6EEC2BC3EF9100A04496 /* VacancyFullView.swift */,
 				94AF6EEE2BC3EF9F00A04496 /* VacancyViewModel.swift */,
+				94AF6EF92BC5304100A04496 /* AdressMapView.swift */,
+				94AF6EFB2BC5306900A04496 /* LookingAppliedView.swift */,
 			);
 			path = Vacancy;
 			sourceTree = "<group>";
@@ -323,6 +329,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94AF6EFC2BC5306900A04496 /* LookingAppliedView.swift in Sources */,
+				94AF6EFA2BC5304100A04496 /* AdressMapView.swift in Sources */,
 				94D69AC22BC18AC90076C949 /* EnterConfirmNumberTextField.swift in Sources */,
 				94D69AE72BC2E9B80076C949 /* SuggestionView.swift in Sources */,
 				94AF6EF32BC5222300A04496 /* JobFeedCoordinatorView.swift in Sources */,

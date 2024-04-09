@@ -56,7 +56,7 @@ struct HomeCoordinatorView: View {
             Text("Сообщения")
         }
         .tag(HomeTab.messages)
-            LoginCoordinatorView(coordinator: coordinator.loginCoordinator)
+            Text("Профиль экран")
         .tabItem {
             Image("profileTabbarIcon")
                 .renderingMode(coordinator.tab == HomeTab.profile ? .template : .original)
