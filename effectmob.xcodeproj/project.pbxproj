@@ -8,27 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		94AF6EE82BC3D32900A04496 /* VacancyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EE72BC3D32900A04496 /* VacancyCardView.swift */; };
-		94AF6EEB2BC3EF7B00A04496 /* VacancyFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EEA2BC3EF7B00A04496 /* VacancyFlowCoordinator.swift */; };
 		94AF6EED2BC3EF9100A04496 /* VacancyFullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EEC2BC3EF9100A04496 /* VacancyFullView.swift */; };
 		94AF6EEF2BC3EF9F00A04496 /* VacancyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EEE2BC3EF9F00A04496 /* VacancyViewModel.swift */; };
 		94AF6EF12BC3FB4200A04496 /* Array+String+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EF02BC3FB4200A04496 /* Array+String+extensions.swift */; };
-		94D69A782BC1334C0076C949 /* effectmobApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A772BC1334C0076C949 /* effectmobApp.swift */; };
-		94D69A7A2BC1334C0076C949 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A792BC1334C0076C949 /* ContentView.swift */; };
+		94AF6EF32BC5222300A04496 /* JobFeedCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EF22BC5222300A04496 /* JobFeedCoordinatorView.swift */; };
+		94AF6EF52BC5229400A04496 /* JobFeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EF42BC5229400A04496 /* JobFeedCoordinator.swift */; };
+		94AF6EF72BC52AF300A04496 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EF62BC52AF300A04496 /* HomeCoordinator.swift */; };
 		94D69A7C2BC1334E0076C949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D69A7B2BC1334E0076C949 /* Assets.xcassets */; };
 		94D69A7F2BC1334E0076C949 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D69A7E2BC1334E0076C949 /* Preview Assets.xcassets */; };
 		94D69A862BC135090076C949 /* EffectMobApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A852BC135090076C949 /* EffectMobApp.swift */; };
-		94D69A882BC135AC0076C949 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A872BC135AC0076C949 /* AppCoordinator.swift */; };
-		94D69A8A2BC135F40076C949 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A892BC135F40076C949 /* HomeView.swift */; };
-		94D69A8F2BC1365B0076C949 /* UserFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A8E2BC1365B0076C949 /* UserFlowCoordinator.swift */; };
-		94D69A912BC1366E0076C949 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A902BC1366E0076C949 /* UserListView.swift */; };
-		94D69A932BC1367C0076C949 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A922BC1367C0076C949 /* UserListViewModel.swift */; };
-		94D69A952BC136870076C949 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A942BC136870076C949 /* User.swift */; };
-		94D69A972BC136B90076C949 /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A962BC136B90076C949 /* UserDetailsView.swift */; };
-		94D69A992BC136CB0076C949 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A982BC136CB0076C949 /* UserDetailViewModel.swift */; };
-		94D69A9B2BC136D70076C949 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A9A2BC136D70076C949 /* Profile.swift */; };
-		94D69AA02BC13C210076C949 /* LoginFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A9F2BC13C210076C949 /* LoginFlowCoordinator.swift */; };
-		94D69AA22BC13C9F0076C949 /* EnterEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AA12BC13C9F0076C949 /* EnterEmailView.swift */; };
-		94D69AA42BC13D090076C949 /* EnterEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AA32BC13D090076C949 /* EnterEmailViewModel.swift */; };
+		94D69A8A2BC135F40076C949 /* HomeCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A892BC135F40076C949 /* HomeCoordinatorView.swift */; };
+		94D69AA02BC13C210076C949 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A9F2BC13C210076C949 /* LoginCoordinator.swift */; };
+		94D69AA22BC13C9F0076C949 /* LoginCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AA12BC13C9F0076C949 /* LoginCoordinatorView.swift */; };
+		94D69AA42BC13D090076C949 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AA32BC13D090076C949 /* LoginViewModel.swift */; };
 		94D69AB52BC152C00076C949 /* Color+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AB42BC152C00076C949 /* Color+extensions.swift */; };
 		94D69AB72BC158380076C949 /* EnterEmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AB62BC158380076C949 /* EnterEmailTextField.swift */; };
 		94D69ABA2BC165EA0076C949 /* EnterEmailModulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AB92BC165EA0076C949 /* EnterEmailModulView.swift */; };
@@ -40,41 +32,30 @@
 		94D69ACA2BC298BB0076C949 /* ConfirmEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AC92BC298BB0076C949 /* ConfirmEmailViewModel.swift */; };
 		94D69ACC2BC2A5100076C949 /* ConfirmEmailModulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69ACB2BC2A5100076C949 /* ConfirmEmailModulView.swift */; };
 		94D69ACE2BC2A8F60076C949 /* UserLoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69ACD2BC2A8F50076C949 /* UserLoginData.swift */; };
-		94D69AD12BC2D1450076C949 /* FinderFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AD02BC2D1450076C949 /* FinderFlowCoordinator.swift */; };
 		94D69AD42BC2D2E50076C949 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AD32BC2D2E50076C949 /* Models.swift */; };
 		94D69AD92BC2D55E0076C949 /* dataFromServer.json in Resources */ = {isa = PBXBuildFile; fileRef = 94D69AD82BC2D55E0076C949 /* dataFromServer.json */; };
 		94D69ADC2BC2D5B70076C949 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69ADB2BC2D5B70076C949 /* NetworkService.swift */; };
-		94D69ADE2BC2DD930076C949 /* JobFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69ADD2BC2DD930076C949 /* JobFeedView.swift */; };
 		94D69AE02BC2DDA20076C949 /* JobFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69ADF2BC2DDA20076C949 /* JobFeedViewModel.swift */; };
-		94D69AE22BC2DDC80076C949 /* VacancyFeedModulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AE12BC2DDC80076C949 /* VacancyFeedModulView.swift */; };
 		94D69AE52BC2E5FB0076C949 /* DismissingKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AE42BC2E5FB0076C949 /* DismissingKeyboard.swift */; };
 		94D69AE72BC2E9B80076C949 /* SuggestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AE62BC2E9B80076C949 /* SuggestionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		94AF6EE72BC3D32900A04496 /* VacancyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyCardView.swift; sourceTree = "<group>"; };
-		94AF6EEA2BC3EF7B00A04496 /* VacancyFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyFlowCoordinator.swift; sourceTree = "<group>"; };
 		94AF6EEC2BC3EF9100A04496 /* VacancyFullView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyFullView.swift; sourceTree = "<group>"; };
 		94AF6EEE2BC3EF9F00A04496 /* VacancyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyViewModel.swift; sourceTree = "<group>"; };
 		94AF6EF02BC3FB4200A04496 /* Array+String+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+String+extensions.swift"; sourceTree = "<group>"; };
+		94AF6EF22BC5222300A04496 /* JobFeedCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobFeedCoordinatorView.swift; sourceTree = "<group>"; };
+		94AF6EF42BC5229400A04496 /* JobFeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobFeedCoordinator.swift; sourceTree = "<group>"; };
+		94AF6EF62BC52AF300A04496 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		94D69A742BC1334C0076C949 /* effectmob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = effectmob.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		94D69A772BC1334C0076C949 /* effectmobApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = effectmobApp.swift; sourceTree = "<group>"; };
-		94D69A792BC1334C0076C949 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		94D69A7B2BC1334E0076C949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94D69A7E2BC1334E0076C949 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94D69A852BC135090076C949 /* EffectMobApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectMobApp.swift; sourceTree = "<group>"; };
-		94D69A872BC135AC0076C949 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		94D69A892BC135F40076C949 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		94D69A8E2BC1365B0076C949 /* UserFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowCoordinator.swift; sourceTree = "<group>"; };
-		94D69A902BC1366E0076C949 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
-		94D69A922BC1367C0076C949 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
-		94D69A942BC136870076C949 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		94D69A962BC136B90076C949 /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
-		94D69A982BC136CB0076C949 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
-		94D69A9A2BC136D70076C949 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		94D69A9F2BC13C210076C949 /* LoginFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlowCoordinator.swift; sourceTree = "<group>"; };
-		94D69AA12BC13C9F0076C949 /* EnterEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailView.swift; sourceTree = "<group>"; };
-		94D69AA32BC13D090076C949 /* EnterEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailViewModel.swift; sourceTree = "<group>"; };
+		94D69A892BC135F40076C949 /* HomeCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorView.swift; sourceTree = "<group>"; };
+		94D69A9F2BC13C210076C949 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		94D69AA12BC13C9F0076C949 /* LoginCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinatorView.swift; sourceTree = "<group>"; };
+		94D69AA32BC13D090076C949 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		94D69AB42BC152C00076C949 /* Color+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+extensions.swift"; sourceTree = "<group>"; };
 		94D69AB62BC158380076C949 /* EnterEmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailTextField.swift; sourceTree = "<group>"; };
 		94D69AB92BC165EA0076C949 /* EnterEmailModulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailModulView.swift; sourceTree = "<group>"; };
@@ -86,13 +67,10 @@
 		94D69AC92BC298BB0076C949 /* ConfirmEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmEmailViewModel.swift; sourceTree = "<group>"; };
 		94D69ACB2BC2A5100076C949 /* ConfirmEmailModulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmEmailModulView.swift; sourceTree = "<group>"; };
 		94D69ACD2BC2A8F50076C949 /* UserLoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginData.swift; sourceTree = "<group>"; };
-		94D69AD02BC2D1450076C949 /* FinderFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderFlowCoordinator.swift; sourceTree = "<group>"; };
 		94D69AD32BC2D2E50076C949 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		94D69AD82BC2D55E0076C949 /* dataFromServer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dataFromServer.json; sourceTree = "<group>"; };
 		94D69ADB2BC2D5B70076C949 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		94D69ADD2BC2DD930076C949 /* JobFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobFeedView.swift; sourceTree = "<group>"; };
 		94D69ADF2BC2DDA20076C949 /* JobFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobFeedViewModel.swift; sourceTree = "<group>"; };
-		94D69AE12BC2DDC80076C949 /* VacancyFeedModulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyFeedModulView.swift; sourceTree = "<group>"; };
 		94D69AE42BC2E5FB0076C949 /* DismissingKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissingKeyboard.swift; sourceTree = "<group>"; };
 		94D69AE62BC2E9B80076C949 /* SuggestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,11 +89,21 @@
 		94AF6EE92BC3EF6200A04496 /* Vacancy */ = {
 			isa = PBXGroup;
 			children = (
-				94AF6EEA2BC3EF7B00A04496 /* VacancyFlowCoordinator.swift */,
 				94AF6EEC2BC3EF9100A04496 /* VacancyFullView.swift */,
 				94AF6EEE2BC3EF9F00A04496 /* VacancyViewModel.swift */,
 			);
 			path = Vacancy;
+			sourceTree = "<group>";
+		};
+		94AF6EF82BC52C3D00A04496 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				94D69A9D2BC13AC20076C949 /* Home */,
+				94D69A9E2BC13C050076C949 /* Login */,
+				94D69ACF2BC2D0EA0076C949 /* JobFeed */,
+				94AF6EE92BC3EF6200A04496 /* Vacancy */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		94D69A6B2BC1334C0076C949 = {
@@ -137,18 +125,13 @@
 		94D69A762BC1334C0076C949 /* effectmob */ = {
 			isa = PBXGroup;
 			children = (
-				94AF6EE92BC3EF6200A04496 /* Vacancy */,
-				94D69A772BC1334C0076C949 /* effectmobApp.swift */,
-				94D69AE32BC2E5ED0076C949 /* ViewModifiers */,
+				94D69A9C2BC13AB70076C949 /* App */,
 				94D69ADA2BC2D58E0076C949 /* NetworkService */,
+				94AF6EF82BC52C3D00A04496 /* Screens */,
+				94D69AE32BC2E5ED0076C949 /* ViewModifiers */,
 				94D69AD52BC2D4A70076C949 /* Resources */,
 				94D69AD22BC2D2DA0076C949 /* Models */,
-				94D69ACF2BC2D0EA0076C949 /* Finder */,
 				94D69AB32BC152AE0076C949 /* Extensions */,
-				94D69A9E2BC13C050076C949 /* Login */,
-				94D69A9D2BC13AC20076C949 /* Home */,
-				94D69A9C2BC13AB70076C949 /* App */,
-				94D69A8B2BC136230076C949 /* User */,
 				94D69A7B2BC1334E0076C949 /* Assets.xcassets */,
 				94D69A7D2BC1334E0076C949 /* Preview Content */,
 			);
@@ -163,42 +146,10 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		94D69A8B2BC136230076C949 /* User */ = {
-			isa = PBXGroup;
-			children = (
-				94D69A8E2BC1365B0076C949 /* UserFlowCoordinator.swift */,
-				94D69A8C2BC136300076C949 /* UserList */,
-				94D69A8D2BC1363A0076C949 /* UserDetails */,
-			);
-			path = User;
-			sourceTree = "<group>";
-		};
-		94D69A8C2BC136300076C949 /* UserList */ = {
-			isa = PBXGroup;
-			children = (
-				94D69A902BC1366E0076C949 /* UserListView.swift */,
-				94D69A922BC1367C0076C949 /* UserListViewModel.swift */,
-				94D69A942BC136870076C949 /* User.swift */,
-			);
-			path = UserList;
-			sourceTree = "<group>";
-		};
-		94D69A8D2BC1363A0076C949 /* UserDetails */ = {
-			isa = PBXGroup;
-			children = (
-				94D69A962BC136B90076C949 /* UserDetailsView.swift */,
-				94D69A982BC136CB0076C949 /* UserDetailViewModel.swift */,
-				94D69A9A2BC136D70076C949 /* Profile.swift */,
-			);
-			path = UserDetails;
-			sourceTree = "<group>";
-		};
 		94D69A9C2BC13AB70076C949 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				94D69A852BC135090076C949 /* EffectMobApp.swift */,
-				94D69A872BC135AC0076C949 /* AppCoordinator.swift */,
-				94D69A792BC1334C0076C949 /* ContentView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -206,7 +157,8 @@
 		94D69A9D2BC13AC20076C949 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				94D69A892BC135F40076C949 /* HomeView.swift */,
+				94AF6EF62BC52AF300A04496 /* HomeCoordinator.swift */,
+				94D69A892BC135F40076C949 /* HomeCoordinatorView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -214,7 +166,9 @@
 		94D69A9E2BC13C050076C949 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				94D69A9F2BC13C210076C949 /* LoginFlowCoordinator.swift */,
+				94D69A9F2BC13C210076C949 /* LoginCoordinator.swift */,
+				94D69AA12BC13C9F0076C949 /* LoginCoordinatorView.swift */,
+				94D69AA32BC13D090076C949 /* LoginViewModel.swift */,
 				94D69AC72BC2982C0076C949 /* EnterEmail */,
 				94D69AC82BC298440076C949 /* ConfirmEmail */,
 				94D69ACD2BC2A8F50076C949 /* UserLoginData.swift */,
@@ -236,8 +190,6 @@
 		94D69AC72BC2982C0076C949 /* EnterEmail */ = {
 			isa = PBXGroup;
 			children = (
-				94D69AA12BC13C9F0076C949 /* EnterEmailView.swift */,
-				94D69AA32BC13D090076C949 /* EnterEmailViewModel.swift */,
 				94D69AB62BC158380076C949 /* EnterEmailTextField.swift */,
 				94D69AB92BC165EA0076C949 /* EnterEmailModulView.swift */,
 				94D69ABD2BC1827F0076C949 /* FindEmployeesModulView.swift */,
@@ -256,17 +208,16 @@
 			path = ConfirmEmail;
 			sourceTree = "<group>";
 		};
-		94D69ACF2BC2D0EA0076C949 /* Finder */ = {
+		94D69ACF2BC2D0EA0076C949 /* JobFeed */ = {
 			isa = PBXGroup;
 			children = (
-				94D69AD02BC2D1450076C949 /* FinderFlowCoordinator.swift */,
-				94D69ADD2BC2DD930076C949 /* JobFeedView.swift */,
+				94AF6EF42BC5229400A04496 /* JobFeedCoordinator.swift */,
+				94AF6EF22BC5222300A04496 /* JobFeedCoordinatorView.swift */,
 				94D69ADF2BC2DDA20076C949 /* JobFeedViewModel.swift */,
-				94D69AE12BC2DDC80076C949 /* VacancyFeedModulView.swift */,
 				94D69AE62BC2E9B80076C949 /* SuggestionView.swift */,
 				94AF6EE72BC3D32900A04496 /* VacancyCardView.swift */,
 			);
-			path = Finder;
+			path = JobFeed;
 			sourceTree = "<group>";
 		};
 		94D69AD22BC2D2DA0076C949 /* Models */ = {
@@ -373,44 +324,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				94D69AC22BC18AC90076C949 /* EnterConfirmNumberTextField.swift in Sources */,
-				94D69A972BC136B90076C949 /* UserDetailsView.swift in Sources */,
 				94D69AE72BC2E9B80076C949 /* SuggestionView.swift in Sources */,
-				94D69A9B2BC136D70076C949 /* Profile.swift in Sources */,
-				94D69A912BC1366E0076C949 /* UserListView.swift in Sources */,
+				94AF6EF32BC5222300A04496 /* JobFeedCoordinatorView.swift in Sources */,
 				94D69AB52BC152C00076C949 /* Color+extensions.swift in Sources */,
 				94D69ABC2BC170220076C949 /* String+extensions.swift in Sources */,
 				94AF6EED2BC3EF9100A04496 /* VacancyFullView.swift in Sources */,
-				94D69AD12BC2D1450076C949 /* FinderFlowCoordinator.swift in Sources */,
+				94AF6EF52BC5229400A04496 /* JobFeedCoordinator.swift in Sources */,
 				94D69ACC2BC2A5100076C949 /* ConfirmEmailModulView.swift in Sources */,
-				94D69A932BC1367C0076C949 /* UserListViewModel.swift in Sources */,
-				94D69A992BC136CB0076C949 /* UserDetailViewModel.swift in Sources */,
-				94D69AE22BC2DDC80076C949 /* VacancyFeedModulView.swift in Sources */,
-				94AF6EEB2BC3EF7B00A04496 /* VacancyFlowCoordinator.swift in Sources */,
 				94D69A862BC135090076C949 /* EffectMobApp.swift in Sources */,
 				94D69AB72BC158380076C949 /* EnterEmailTextField.swift in Sources */,
-				94D69AA02BC13C210076C949 /* LoginFlowCoordinator.swift in Sources */,
+				94D69AA02BC13C210076C949 /* LoginCoordinator.swift in Sources */,
 				94AF6EF12BC3FB4200A04496 /* Array+String+extensions.swift in Sources */,
 				94D69AE02BC2DDA20076C949 /* JobFeedViewModel.swift in Sources */,
 				94AF6EEF2BC3EF9F00A04496 /* VacancyViewModel.swift in Sources */,
 				94D69ACE2BC2A8F60076C949 /* UserLoginData.swift in Sources */,
-				94D69A882BC135AC0076C949 /* AppCoordinator.swift in Sources */,
 				94D69ACA2BC298BB0076C949 /* ConfirmEmailViewModel.swift in Sources */,
-				94D69AA42BC13D090076C949 /* EnterEmailViewModel.swift in Sources */,
+				94D69AA42BC13D090076C949 /* LoginViewModel.swift in Sources */,
 				94D69AC42BC1B0330076C949 /* Character+extensions.swift in Sources */,
 				94D69AC02BC185FD0076C949 /* ConfirmEmailView.swift in Sources */,
-				94D69AA22BC13C9F0076C949 /* EnterEmailView.swift in Sources */,
-				94D69A7A2BC1334C0076C949 /* ContentView.swift in Sources */,
-				94D69A952BC136870076C949 /* User.swift in Sources */,
-				94D69ADE2BC2DD930076C949 /* JobFeedView.swift in Sources */,
-				94D69A8F2BC1365B0076C949 /* UserFlowCoordinator.swift in Sources */,
+				94D69AA22BC13C9F0076C949 /* LoginCoordinatorView.swift in Sources */,
 				94D69ABE2BC1827F0076C949 /* FindEmployeesModulView.swift in Sources */,
-				94D69A8A2BC135F40076C949 /* HomeView.swift in Sources */,
-				94D69A782BC1334C0076C949 /* effectmobApp.swift in Sources */,
+				94D69A8A2BC135F40076C949 /* HomeCoordinatorView.swift in Sources */,
 				94AF6EE82BC3D32900A04496 /* VacancyCardView.swift in Sources */,
 				94D69ADC2BC2D5B70076C949 /* NetworkService.swift in Sources */,
 				94D69ABA2BC165EA0076C949 /* EnterEmailModulView.swift in Sources */,
 				94D69AE52BC2E5FB0076C949 /* DismissingKeyboard.swift in Sources */,
 				94D69AD42BC2D2E50076C949 /* Models.swift in Sources */,
+				94AF6EF72BC52AF300A04496 /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

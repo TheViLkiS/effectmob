@@ -8,12 +8,16 @@
 import SwiftUI
 import Combine
 
-struct EnterEmailView: View {
-//    let didClickMenuItem = PassthroughSubject<String, Never>()
+struct LoginCoordinatorView: View {
 
-    @StateObject var viewModel: EnterEmailViewModel
+    // MARK: Stored Properties
+
+    @ObservedObject var coordinator: LoginCoordinator
+    
     let didClickContinueButton = PassthroughSubject<UserLoginData, Never>()
     
+    // MARK: Views
+
     var body: some View {
         VStack(spacing: 22) {
             HStack {
@@ -25,8 +29,8 @@ struct EnterEmailView: View {
             }
             Spacer()
             EnterEmailModulView(continueButtonTap: { email in
-                viewModel.userLoginData.email = email
-                didClickContinueButton.send(viewModel.userLoginData)
+                coordinator.viewModel.userLoginData.email = email
+                didClickContinueButton.send(coordinator.viewModel.userLoginData)
             },
                                 loginWithPasswordButtonTap: {
             })
@@ -36,7 +40,4 @@ struct EnterEmailView: View {
         .background(.black)
         .modifier(DismissingKeyboard())
     }
-}
-#Preview {
-    EnterEmailView(viewModel: EnterEmailViewModel())
 }

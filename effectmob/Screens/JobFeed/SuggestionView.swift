@@ -21,7 +21,6 @@ struct SuggestionView: View {
                 }
                 .padding(.bottom, 78)
                 .padding(.top, 10)
-//                .padding(.trailing, 8)
                 VStack(alignment: .leading) {
                     Text(centralText)
                         .font(.system(size: 14, weight: .medium, design: .default))

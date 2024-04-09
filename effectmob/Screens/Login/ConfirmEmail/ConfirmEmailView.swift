@@ -26,7 +26,3 @@ struct ConfirmEmailView: View {
         .background(.black)
     }
 }
-
-#Preview {
-    ConfirmEmailView(viewModel: ConfirmEmailViewModel())
-}

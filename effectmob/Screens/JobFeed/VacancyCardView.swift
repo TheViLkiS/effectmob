@@ -67,7 +67,6 @@ struct VacancyCardView: View {
                 .padding(.top, 11)
             }
         }
-        
         .padding(16)
         .background(Color(rgb: 0x222325))
         .cornerRadius(8)

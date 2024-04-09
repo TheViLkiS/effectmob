@@ -24,6 +24,11 @@ final class NetworkService {
                 }
         return JobSearchData(offers: [], vacancies: [])
     }
+    
+    func fetchUserLoginData() -> UserLoginData {
+        UserLoginData(email: "test@mail.com", password: "password")
+    }
+    
     static func fetchData() -> JobSearchData? {
                 
         if let url = Bundle.main.url(forResource: "dataFromServer", withExtension: "json") {
