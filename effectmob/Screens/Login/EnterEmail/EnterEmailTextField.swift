@@ -25,7 +25,7 @@ struct EnterEmailTextField: View {
                 if text.isEmpty {
                     Text(placeholder)
                         .font(.text1)
-                        .foregroundColor(Color(rgb: 0x9F9F9F))
+                        .foregroundColor(.grey9F9F9F)
                 }
                 TextField("", text: $text, onEditingChanged: { editing in
                     isEditing = editing

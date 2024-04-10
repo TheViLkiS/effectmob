@@ -36,7 +36,7 @@ struct EnterConfirmNumberTextField: View {
             }
         }
         .frame(width: 48, height: 48, alignment: .center)
-        .background(Color(rgb: 0x313234))
+        .background(Color.grey313234)
         .cornerRadius(8)
     }
 }

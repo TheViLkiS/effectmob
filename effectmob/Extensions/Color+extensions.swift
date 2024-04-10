@@ -9,12 +9,12 @@ import SwiftUI
 extension Color {
     
     static var black000000: Color { Color(rgb: 0x000000) }
+    static var white: Color { Color(rgb: 0xFFFFFF)}
     static var grey222325: Color { Color(rgb: 0x222325)}
     static var grey313234: Color { Color(rgb: 0x313234)}
     static var grey858688: Color { Color(rgb: 0x858688)}
     static var grey9F9F9F: Color { Color(rgb: 0x9F9F9F)}
     static var greyDBDBDB: Color { Color(rgb: 0xDBDBDB)}
-    static var white: Color { Color(rgb: 0xFFFFFF)}
     static var blue2B7EFE: Color { Color(rgb: 0x2B7EFE)}
     static var darkBlue00427D: Color { Color(rgb: 0x00427D)}
     static var green4CB24E: Color { Color(rgb: 0x4CB24E)}

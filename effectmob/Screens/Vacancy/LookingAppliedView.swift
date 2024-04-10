@@ -42,7 +42,7 @@ struct LookingAppliedView: View {
         }
         .padding(8)
         .frame(width: 160, height: 50, alignment: .center)
-        .background(Color(rgb: 0x015905))
+        .background(Color.darkGreen015905)
         .cornerRadius(8)
     }
 }

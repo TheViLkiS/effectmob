@@ -29,15 +29,15 @@ struct FindEmployeesModulView: View {
                     .font(.buttonText2)
                     .frame(maxWidth: .infinity)
                     .frame(height: 40, alignment: .center)
-                    .background(Color(rgb: 0x4CB24E))
+                    .background(Color.green4CB24E)
                     .foregroundColor(.white)
                     .cornerRadius(50.0)
-                    .shadow(radius: 10)
+                    .shadow(color: .shadows0C0C0C, radius: 10)
             }
         }
         .padding(16)
         .frame(height: 141, alignment: .center)
-        .background(Color(rgb: 0x222325))
+        .background(Color.grey222325)
         .cornerRadius(8)
         .padding(.leading, 16)
         .padding(.trailing, 18)

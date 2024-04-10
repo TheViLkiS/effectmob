@@ -61,7 +61,7 @@ struct VacancyFullView: View {
                             .foregroundColor(.white)
                         Text("Он получит его с откликом на вакансию")
                             .font(.title4)
-                            .foregroundColor(Color(rgb: 0x858688))
+                            .foregroundColor(.grey858688)
                     }
                     .padding(.top, 28)
                     ForEach(vacancy.questions, id: \.self) { question in
@@ -71,10 +71,10 @@ struct VacancyFullView: View {
                                 .padding(.horizontal, 12)
                                 .font(.title4)
                                 .frame(height: 40, alignment: .center)
-                                .background(Color(rgb: 0x313234))
+                                .background(Color.grey313234)
                                 .foregroundColor(.white)
                                 .cornerRadius(50.0)
-                                .shadow(radius: 10)
+                                .shadow(color: .shadows0C0C0C, radius: 10)
                         }
                     }
                     Button(action: {
@@ -84,10 +84,10 @@ struct VacancyFullView: View {
                             .font(.buttonText2)
                             .frame(maxWidth: .infinity)
                             .frame(height: 48, alignment: .center)
-                            .background(Color(rgb: 0x4CB24E))
+                            .background(Color.green4CB24E)
                             .foregroundColor(.white)
                             .cornerRadius(8)
-                            .shadow(radius: 10)
+                            .shadow(color: .shadows0C0C0C, radius: 10)
                     }
                     .padding(.top, 11)
                     .padding(.bottom, 16)

@@ -29,7 +29,7 @@ struct SuggestionView: View {
                             Text(bottomText)
                             .font(.text1)
                             .frame(alignment: .leading)
-                            .foregroundColor(Color(rgb: 0x4CB24E))
+                            .foregroundColor(.green4CB24E)
                     }
                     Spacer()
                 }
@@ -39,7 +39,7 @@ struct SuggestionView: View {
         }
         .padding(8)
         .frame(width: 138, height: 120, alignment: .center)
-        .background(Color(rgb: 0x222325))
+        .background(Color.grey222325)
         .cornerRadius(8)
     }
 }

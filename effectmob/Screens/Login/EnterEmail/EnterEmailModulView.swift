@@ -26,14 +26,14 @@ struct EnterEmailModulView: View {
                 EnterEmailTextField(text: $userLoginData.email, placeholder: "Электронная почта", imageName: "emailPlaceholderImage")
                         .padding()
                         .frame(height: 40, alignment: .center)
-                        .background(Color(rgb: 0x313234))
+                        .background(Color.grey313234)
                         .cornerRadius(8.0)
-                        .shadow(radius: 10)
+                        .shadow(color: .shadows0C0C0C, radius: 10)
                         .overlay(
                             Group {
                                 if !isValidEmail {
                                     RoundedRectangle(cornerRadius: 10)
-                                        .stroke(Color(rgb: 0xFF0000), lineWidth: 1)
+                                        .stroke(Color.redFF0000, lineWidth: 1)
                                 }
                             }
                         )
@@ -45,7 +45,7 @@ struct EnterEmailModulView: View {
                         Text("Вы ввели неверный e-mail")
                             .font(.system(size: 13, weight: .regular, design: .default))
                             .frame(height: 0, alignment: .leading)
-                            .foregroundColor(Color(rgb: 0xFF0000))
+                            .foregroundColor(.redFF0000)
                     }
                 }
             }
@@ -59,10 +59,10 @@ struct EnterEmailModulView: View {
                     Text("Продолжить")
                         .font(.buttonText2)
                         .frame(width: 167, height: 40, alignment: .center)
-                        .background(Color(rgb: 0x2B7EFE))
+                        .background(Color.blue2B7EFE)
                         .foregroundColor(.white)
                         .cornerRadius(10.0)
-                        .shadow(radius: 10)
+                        .shadow(color: .shadows0C0C0C, radius: 10)
                 }
                 .overlay(
                     RoundedRectangle(cornerRadius: 10)
@@ -76,15 +76,15 @@ struct EnterEmailModulView: View {
                     Text("Войти с паролем")
                         .font(.buttonText2)
                         .background(Color.clear)
-                        .foregroundColor(Color(rgb: 0x2B7EFE))
+                        .foregroundColor(.blue2B7EFE)
                         .cornerRadius(10.0)
-                        .shadow(radius: 10)
+                        .shadow(color: .shadows0C0C0C, radius: 10)
                 }
             }
         }
         .padding(16)
         .frame(height: 179, alignment: .center)
-        .background(Color(rgb: 0x222325))
+        .background(Color.grey222325)
         .cornerRadius(8)
         .padding(.leading, 16)
         .padding(.trailing, 18)

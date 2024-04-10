@@ -27,7 +27,7 @@ struct AdressMapView: View {
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 12)
-        .background(Color(rgb: 0x313234))
+        .background(Color.grey222325)
         .cornerRadius(8)
     }
 }

@@ -60,10 +60,10 @@ struct ConfirmEmailModulView: View {
                     .font(.buttonText1)
                     .frame(maxWidth: .infinity)
                     .frame(height: 40, alignment: .center)
-                    .background(isAllNumbersInputed ? Color(rgb: 0x2B7EFE): Color(rgb: 0x00427D))
-                    .foregroundColor(isAllNumbersInputed ? Color.white: Color(rgb: 0x9F9F9F))
+                    .background(isAllNumbersInputed ? Color.blue2B7EFE: Color.darkBlue00427D)
+                    .foregroundColor(isAllNumbersInputed ? Color.white: Color.grey9F9F9F)
                     .cornerRadius(8.0)
-                    .shadow(radius: 8.0)
+                    .shadow(color: .shadows0C0C0C, radius: 8)
             }
             .overlay(
                 RoundedRectangle(cornerRadius: 10)

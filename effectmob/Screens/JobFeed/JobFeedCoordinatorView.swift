@@ -20,16 +20,16 @@ struct JobFeedCoordinatorView: View {
                     EnterEmailTextField(text: $finderText, placeholder: "Должность, ключевые слова", imageName: "findTabbarIcon")
                         .padding()
                         .frame(height: 40, alignment: .center)
-                        .background(Color(rgb: 0x313234))
+                        .background(Color.grey313234)
                         .cornerRadius(8.0)
-                        .shadow(radius: 10)
+                        .shadow(color: .shadows0C0C0C, radius: 10)
                         .padding(.trailing, 8)
                         .padding(.leading, 16)
                     Button(action: {
                     }) {
                         Image("filterJobFeedIcon")
                             .frame(width: 40, height: 40, alignment: .center)
-                            .background(Color(rgb: 0x313234))
+                            .background(Color.grey313234)
                             .cornerRadius(10.0)
                             .padding(.trailing, 16)
                     }
@@ -59,16 +59,16 @@ struct JobFeedCoordinatorView: View {
                             .buttonStyle(PlainButtonStyle())
                     }
                     Button(action: {
-                        print("Кнопка Откликнуться нажата")
+                        print("Кнопка More нажата")
                     }) {
                         Text(String(format: NSLocalizedString("More vacancies", comment: ""), vacancies.count))
                             .font(.buttonText2)
                             .frame(maxWidth: .infinity)
                             .frame(height: 48, alignment: .center)
-                            .background(Color(rgb: 0x2B7EFE))
+                            .background(Color.blue2B7EFE)
                             .foregroundColor(.white)
                             .cornerRadius(8)
-                            .shadow(radius: 8)
+                            .shadow(color: .shadows0C0C0C, radius: 8)
                             .padding(.horizontal, 16)
                             .padding(.top, 28)
                     }

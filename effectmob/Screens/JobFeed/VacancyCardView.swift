@@ -24,7 +24,7 @@ struct VacancyCardView: View {
                     if let lookingNumber = vacancy.lookingNumber {
                         Text(String(format: NSLocalizedString("Now looking people", comment: ""), lookingNumber))
                             .font(.text1)
-                            .foregroundColor(Color(rgb: 0x4CB24E))
+                            .foregroundColor(.green4CB24E)
                     }
                     Spacer()
                 }
@@ -50,7 +50,7 @@ struct VacancyCardView: View {
                 }
                 Text("Опубликовано \(vacancy.publishedDate.toDate(format: .yyyyMMdd).dateString())")
                     .font(.text1)
-                    .foregroundColor(Color(rgb: 0x858688))
+                    .foregroundColor(.grey858688)
                 
                 Button(action: {
                     print("Кнопка Откликнуться нажата")
@@ -59,16 +59,16 @@ struct VacancyCardView: View {
                         .font(.buttonText2)
                         .frame(maxWidth: .infinity)
                         .frame(height: 40, alignment: .center)
-                        .background(Color(rgb: 0x4CB24E))
+                        .background(Color.green4CB24E)
                         .foregroundColor(.white)
                         .cornerRadius(50.0)
-                        .shadow(radius: 10)
+                        .shadow(color: .shadows0C0C0C, radius: 10)
                 }
                 .padding(.top, 11)
             }
         }
         .padding(16)
-        .background(Color(rgb: 0x222325))
+        .background(Color.grey222325)
         .cornerRadius(8)
     }
 }
