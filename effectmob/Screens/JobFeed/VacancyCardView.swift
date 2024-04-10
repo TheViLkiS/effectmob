@@ -48,7 +48,7 @@ struct VacancyCardView: View {
                         .font(.system(size: 14, weight: .regular, design: .default))
                         .foregroundColor(.white)
                 }
-                Text(vacancy.publishedDate)
+                Text("Опубликовано \(vacancy.publishedDate.toDate(format: .yyyyMMdd).dateString())")
                     .font(.system(size: 14, weight: .regular, design: .default))
                     .foregroundColor(Color(rgb: 0x858688))
                 
