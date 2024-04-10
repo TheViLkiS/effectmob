@@ -10,7 +10,9 @@ import SwiftData
 
 @Model
 class JobSearchData: ObservableObject, Codable {
+    @Relationship(deleteRule: .cascade)
     let offers: [Offer]
+    @Relationship(deleteRule: .cascade)
     var vacancies: [Vacancy]
     
     init(offers: [Offer], vacancies: [Vacancy]) {
@@ -42,6 +44,7 @@ class Offer: Codable, Identifiable {
     let id: String?
     let title: String
     let link: String
+    @Relationship(deleteRule: .cascade)
     let button: ButtonText?
     
     init(id: String?, title: String, link: String, button: ButtonText?) {
@@ -63,7 +66,7 @@ class Offer: Codable, Identifiable {
         id = try container.decodeIfPresent(String.self, forKey: .id)
         title = try container.decode(String.self, forKey: .title)
         link = try container.decode(String.self, forKey: .link)
-        button = try container.decodeIfPresent(ButtonText.self, forKey: .button)
+//        button = try container.decodeIfPresent(ButtonText.self, forKey: .button)
     }
     
     func encode(to encoder: Encoder) throws {
@@ -104,11 +107,14 @@ class Vacancy: Codable, Identifiable {
     let id: String
     let lookingNumber: Int?
     let title: String
+    @Relationship(deleteRule: .cascade)
     let address: Address
     let company: String
+    @Relationship(deleteRule: .cascade)
     let experience: Experience
     let publishedDate: String
     var isFavorite: Bool
+    @Relationship(deleteRule: .cascade)
     let salary: Salary
     let schedules: [String]
     let appliedNumber: Int?
@@ -145,7 +151,7 @@ class Vacancy: Codable, Identifiable {
         case salary
         case schedules
         case appliedNumber
-        case descriptionText
+        case description
         case responsibilities
         case questions
     }
@@ -163,7 +169,7 @@ class Vacancy: Codable, Identifiable {
         salary = try container.decode(Salary.self, forKey: .salary)
         schedules = try container.decode([String].self, forKey: .schedules)
         appliedNumber = try container.decodeIfPresent(Int.self, forKey: .appliedNumber)
-        descriptionText = try container.decodeIfPresent(String.self, forKey: .descriptionText)
+        descriptionText = try container.decodeIfPresent(String.self, forKey: .description)
         responsibilities = try container.decode(String.self, forKey: .responsibilities)
         questions = try container.decode([String].self, forKey: .questions)
     }
@@ -181,7 +187,7 @@ class Vacancy: Codable, Identifiable {
         try container.encode(salary, forKey: .salary)
         try container.encode(schedules, forKey: .schedules)
         try container.encodeIfPresent(appliedNumber, forKey: .appliedNumber)
-        try container.encodeIfPresent(descriptionText, forKey: .descriptionText)
+        try container.encodeIfPresent(descriptionText, forKey: .description)
         try container.encode(responsibilities, forKey: .responsibilities)
         try container.encode(questions, forKey: .questions)
     }

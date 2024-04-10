@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 final class JobFeedViewModel: ObservableObject {
-    @Published var jobSearchData: JobSearchData
+//    @Published var jobSearchData: JobSearchData
     
     private let networkService: NetworkService
     private unowned let coordinator: FeedCoordinator
@@ -21,7 +21,7 @@ final class JobFeedViewModel: ObservableObject {
     ) {
         self.networkService = networkService
         self.coordinator = coordinator
-        self.jobSearchData = coordinator.parent.jobSearchData
+//        self.jobSearchData = coordinator.parent.jobSearchData
     }
     
     func open(_ vacancy: Vacancy) {

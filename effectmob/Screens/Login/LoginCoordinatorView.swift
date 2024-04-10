@@ -12,6 +12,7 @@ struct LoginCoordinatorView: View {
 
     // MARK: Stored Properties
     @ObservedObject var homeCoordinator: HomeCoordinator
+    @Environment(\.modelContext) var modelContext
     
     @State private var showConfirmEmailView = false
     @State private var userLoginData = UserLoginData(email: "")
@@ -44,8 +45,13 @@ struct LoginCoordinatorView: View {
             }
             .background(.black)
             .modifier(DismissingKeyboard())
+            .onAppear(perform: {
+                modelContext.insert(homeCoordinator.fetchData())
+            })
         }
+        
     }
+    
     
     @ViewBuilder
     private func confirmEmailView(_ userLoginData: UserLoginData) -> some View {

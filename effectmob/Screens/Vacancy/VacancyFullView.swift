@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 
 struct VacancyFullView: View {
-    @Binding var vacancy: Vacancy
+    @State var vacancy: Vacancy
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {

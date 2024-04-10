@@ -19,7 +19,7 @@ enum HomeTab {
 struct HomeCoordinatorView: View {
 
     // MARK: Stored Properties
-
+    @Environment(\.modelContext) var modelContext
     @ObservedObject var coordinator: HomeCoordinator
 
     // MARK: Views
@@ -73,7 +73,6 @@ struct HomeCoordinatorView: View {
             UITabBar.appearance().clipsToBounds = true
                 }
     }
-
 }
 
 #Preview {

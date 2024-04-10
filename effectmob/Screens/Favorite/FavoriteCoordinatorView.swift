@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct FavoriteCoordinatorView: View {
 
@@ -13,6 +14,9 @@ struct FavoriteCoordinatorView: View {
 
     @ObservedObject var coordinator: FavoriteCoordinator
     @State var finderText: String = ""
+    
+    @Environment(\.modelContext) private var modelContext
+//    @Query var favoriteVacancies: [Vacancy]
     
     // MARK: Views
 
@@ -36,17 +40,28 @@ struct FavoriteCoordinatorView: View {
                 }
                 .padding(.top, 16)
                 ScrollView(.vertical) {
-                    ForEach(Array(coordinator.viewModel.jobSearchData.vacancies.enumerated()), id: \.element.id) { index, vacancy in
-                        if coordinator.viewModel.jobSearchData.vacancies[index].isFavorite {
-                            NavigationLink(destination: vacancyView(index)) {
-                                VacancyCardView(vacancy: $coordinator.viewModel.jobSearchData.vacancies[index])
-                                    .padding(.horizontal, 16)
-                                    .padding(.top, 8)
-                            }
-                            .buttonStyle(PlainButtonStyle())
-                            .padding(.bottom, 16)
-                        }
-                    }
+//                    ForEach(Array(coordinator.viewModel.jobSearchData.vacancies.enumerated()), id: \.element.id) { index, vacancy in
+//                        if coordinator.viewModel.jobSearchData.vacancies[index].isFavorite {
+//                            NavigationLink(destination: vacancyView(index)) {
+//                                VacancyCardView(vacancy: $coordinator.viewModel.jobSearchData.vacancies[index])
+//                                    .padding(.horizontal, 16)
+//                                    .padding(.top, 8)
+//                            }
+//                            .buttonStyle(PlainButtonStyle())
+//                            .padding(.bottom, 16)
+//                        }
+//                    }
+//                    ForEach(favoriteVacancies) { vacancy in
+//                        if vacancy.isFavorite {
+//                            NavigationLink(destination: vacancyView(vacancy)) {
+//                                VacancyCardView(vacancy: vacancy)
+//                                    .padding(.horizontal, 16)
+//                                    .padding(.top, 8)
+//                            }
+//                            .buttonStyle(PlainButtonStyle())
+//                            .padding(.bottom, 16)
+//                        }
+//                    }
                 }
             }
             .background(.black)
@@ -55,9 +70,9 @@ struct FavoriteCoordinatorView: View {
     }
 
     @ViewBuilder
-    private func vacancyView(_ index: Int) -> some View {
+    private func vacancyView(_ vacancy: Vacancy) -> some View {
 //        let viewModel = VacancyViewModel(vacancy: coordinator.parent.jobSearchData.vacancies[index], coordinator: coordinator)
-        VacancyFullView(vacancy: $coordinator.viewModel.jobSearchData.vacancies[index])
+        VacancyFullView(vacancy: vacancy)
     }
 
 }

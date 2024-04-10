@@ -15,7 +15,7 @@ class HomeCoordinator: ObservableObject {
     @Published var jobFeedCoordinator: JobFeedCoordinator!
     @Published var favoriteCoordinator: FavoriteCoordinator!
     @Published var loginCoordinator: LoginCoordinator!
-    @ObservedObject var jobSearchData: JobSearchData
+//    @ObservedObject var jobSearchData: JobSearchData
 
     private let networkService: NetworkService
 
@@ -23,7 +23,7 @@ class HomeCoordinator: ObservableObject {
 
     init(networkService: NetworkService) {
         self.networkService = networkService
-        self.jobSearchData = networkService.fetchData()
+//        self.jobSearchData = networkService.fetchData()
         
         self.jobFeedCoordinator = .init(
             networkService: networkService,
@@ -37,5 +37,9 @@ class HomeCoordinator: ObservableObject {
             networkService: networkService,
             parent: self
         )
+    }
+    
+    func fetchData() -> JobSearchData {
+        networkService.fetchData()
     }
 }

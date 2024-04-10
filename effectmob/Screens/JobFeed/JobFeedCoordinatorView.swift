@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct JobFeedCoordinatorView: View {
 
     // MARK: Stored Properties
-
+    
+    @Query var vacancies: [Vacancy]
     @ObservedObject var coordinator: JobFeedCoordinator
     @State var finderText: String = ""
     
@@ -53,18 +55,18 @@ struct JobFeedCoordinatorView: View {
                     Spacer()
                 }
                 ScrollView(.vertical) {
-                    ForEach(Array(coordinator.viewModel.jobSearchData.vacancies.enumerated()), id: \.element.id) { index, vacancy in
-                        NavigationLink(destination: vacancyView(index)) {
-                            VacancyCardView(vacancy: $coordinator.viewModel.jobSearchData.vacancies[index])
-                                .padding(.horizontal, 16)
-                                .padding(.top, 8)
-                        }
-                        .buttonStyle(PlainButtonStyle())
+                    ForEach(vacancies) { vacancy in
+                            NavigationLink(destination: vacancyView(vacancy)) {
+                                VacancyCardView(vacancy: vacancy)
+                                    .padding(.horizontal, 16)
+                                    .padding(.top, 8)
+                            }
+                            .buttonStyle(PlainButtonStyle())
                     }
                     Button(action: {
                         print("Кнопка Откликнуться нажата")
                     }) {
-                        Text("Еще \(coordinator.viewModel.jobSearchData.vacancies.count) вакансии")
+                        Text("Еще \(vacancies.count) вакансии")
                             .font(.system(size: 14, weight: .regular, design: .default))
                             .frame(maxWidth: .infinity)
                             .frame(height: 48, alignment: .center)
@@ -84,9 +86,9 @@ struct JobFeedCoordinatorView: View {
     }
 
     @ViewBuilder
-    private func vacancyView(_ index: Int) -> some View {
+    private func vacancyView(_ vacancy: Vacancy) -> some View {
 //        let viewModel = VacancyViewModel(vacancy: vacancy, coordinator: coordinator)
-        VacancyFullView(vacancy: $coordinator.viewModel.jobSearchData.vacancies[index])
+        VacancyFullView(vacancy: vacancy)
     }
 
 }
