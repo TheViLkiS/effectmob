@@ -9,15 +9,10 @@ import SwiftUI
 import SwiftData
 
 struct JobFeedCoordinatorView: View {
-
-    // MARK: Stored Properties
-    
     @Query var vacancies: [Vacancy]
     @ObservedObject var coordinator: JobFeedCoordinator
     @State var finderText: String = ""
     
-    // MARK: Views
-
     var body: some View {
         NavigationStack {
             VStack(spacing: 22) {
@@ -87,7 +82,6 @@ struct JobFeedCoordinatorView: View {
 
     @ViewBuilder
     private func vacancyView(_ vacancy: Vacancy) -> some View {
-//        let viewModel = VacancyViewModel(vacancy: vacancy, coordinator: coordinator)
         VacancyFullView(vacancy: vacancy)
     }
 

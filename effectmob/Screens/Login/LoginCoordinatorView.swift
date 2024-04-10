@@ -9,18 +9,11 @@ import SwiftUI
 import Combine
 
 struct LoginCoordinatorView: View {
-
-    // MARK: Stored Properties
-    @ObservedObject var homeCoordinator: HomeCoordinator
     @Environment(\.modelContext) var modelContext
-    
+    @ObservedObject var homeCoordinator: HomeCoordinator
+
     @State private var showConfirmEmailView = false
     @State private var userLoginData = UserLoginData(email: "")
-    
-    init(homeCoordinator: HomeCoordinator) {
-        self.homeCoordinator = homeCoordinator
-    }
-    // MARK: Views
 
     var body: some View {
         NavigationStack {
@@ -46,12 +39,11 @@ struct LoginCoordinatorView: View {
             .background(.black)
             .modifier(DismissingKeyboard())
             .onAppear(perform: {
+                try? modelContext.delete(model: JobSearchData.self)
                 modelContext.insert(homeCoordinator.fetchData())
             })
         }
-        
     }
-    
     
     @ViewBuilder
     private func confirmEmailView(_ userLoginData: UserLoginData) -> some View {

@@ -12,8 +12,6 @@ struct EffectMobApp: App {
     @StateObject var coordinator = HomeCoordinator(networkService: NetworkService())
     @Environment(\.modelContext) var modelContext
     
-//    @Query var data: [JobSearchData]
-
     let modelContainer: ModelContainer
     init() {
       do {
@@ -27,9 +25,6 @@ struct EffectMobApp: App {
         WindowGroup {
             LoginCoordinatorView(homeCoordinator: coordinator)
         }
-        
-//        .modelContainer(for: JobSearchData.self, Offer.self, ButtonText.self, Vacancy.self, Address.self, Experience.self, Salary.self])
         .modelContainer(modelContainer)
-//        .modelContext(modelContext)
     }
 }

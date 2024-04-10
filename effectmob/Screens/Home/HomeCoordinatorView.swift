@@ -17,12 +17,7 @@ enum HomeTab {
 }
 
 struct HomeCoordinatorView: View {
-
-    // MARK: Stored Properties
-    @Environment(\.modelContext) var modelContext
     @ObservedObject var coordinator: HomeCoordinator
-
-    // MARK: Views
 
     var body: some View {
         TabView(selection: $coordinator.tab) {
@@ -73,8 +68,4 @@ struct HomeCoordinatorView: View {
             UITabBar.appearance().clipsToBounds = true
                 }
     }
-}
-
-#Preview {
-    HomeCoordinatorView(coordinator: HomeCoordinator(networkService: NetworkService()))
 }

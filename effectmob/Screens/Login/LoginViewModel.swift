@@ -24,19 +24,3 @@ final class LoginViewModel: ObservableObject {
         self.coordinator.open(userLoginData)
     }
 }
-
-//final class EnterEmailViewModel: ObservableObject {
-//    @Published var userLoginData: UserLoginData
-//    
-//    init(userLoginData: UserLoginData) {
-//        self.userLoginData = userLoginData
-//    }
-//    
-//    convenience init() {
-//        self.init(userLoginData: UserLoginData(email: "", password: ""))
-//    }
-//    
-//    func fetchData() {
-//
-//    }
-//}

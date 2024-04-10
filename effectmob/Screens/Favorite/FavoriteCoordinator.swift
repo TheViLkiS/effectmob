@@ -8,16 +8,11 @@
 import SwiftUI
 
 class FavoriteCoordinator: ObservableObject, Identifiable {
-
-    // MARK: Stored Properties
-
     @Published var viewModel: FavoriteViewModel!
     @Published var vacancyViewModel: VacancyViewModel?
 
     private let networkService: NetworkService
     internal unowned let parent: HomeCoordinator
-
-    // MARK: Initialization
 
     init(
          networkService: NetworkService,
@@ -28,7 +23,6 @@ class FavoriteCoordinator: ObservableObject, Identifiable {
         self.viewModel = .init(
             networkService: networkService,
             coordinator: self
-//            jobSearchData: parent.jobSearchData
         )
     }
 }

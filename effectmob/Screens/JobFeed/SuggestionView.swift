@@ -43,7 +43,3 @@ struct SuggestionView: View {
         .cornerRadius(8)
     }
 }
-
-#Preview {
-    SuggestionView(imageName: "bluePlaceIcon", centralText: "Поднять резюме в поиске", bottomText: nil)
-}

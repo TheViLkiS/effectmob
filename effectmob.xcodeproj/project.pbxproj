@@ -34,7 +34,6 @@
 		94D69ABE2BC1827F0076C949 /* FindEmployeesModulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69ABD2BC1827F0076C949 /* FindEmployeesModulView.swift */; };
 		94D69AC02BC185FD0076C949 /* ConfirmEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69ABF2BC185FD0076C949 /* ConfirmEmailView.swift */; };
 		94D69AC22BC18AC90076C949 /* EnterConfirmNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AC12BC18AC90076C949 /* EnterConfirmNumberTextField.swift */; };
-		94D69AC42BC1B0330076C949 /* Character+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AC32BC1B0330076C949 /* Character+extensions.swift */; };
 		94D69ACA2BC298BB0076C949 /* ConfirmEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69AC92BC298BB0076C949 /* ConfirmEmailViewModel.swift */; };
 		94D69ACC2BC2A5100076C949 /* ConfirmEmailModulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69ACB2BC2A5100076C949 /* ConfirmEmailModulView.swift */; };
 		94D69ACE2BC2A8F60076C949 /* UserLoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69ACD2BC2A8F50076C949 /* UserLoginData.swift */; };
@@ -75,7 +74,6 @@
 		94D69ABD2BC1827F0076C949 /* FindEmployeesModulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindEmployeesModulView.swift; sourceTree = "<group>"; };
 		94D69ABF2BC185FD0076C949 /* ConfirmEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmEmailView.swift; sourceTree = "<group>"; };
 		94D69AC12BC18AC90076C949 /* EnterConfirmNumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterConfirmNumberTextField.swift; sourceTree = "<group>"; };
-		94D69AC32BC1B0330076C949 /* Character+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+extensions.swift"; sourceTree = "<group>"; };
 		94D69AC92BC298BB0076C949 /* ConfirmEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmEmailViewModel.swift; sourceTree = "<group>"; };
 		94D69ACB2BC2A5100076C949 /* ConfirmEmailModulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmEmailModulView.swift; sourceTree = "<group>"; };
 		94D69ACD2BC2A8F50076C949 /* UserLoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginData.swift; sourceTree = "<group>"; };
@@ -206,7 +204,6 @@
 			children = (
 				94D69AB42BC152C00076C949 /* Color+extensions.swift */,
 				94D69ABB2BC170220076C949 /* String+extensions.swift */,
-				94D69AC32BC1B0330076C949 /* Character+extensions.swift */,
 				94AF6EF02BC3FB4200A04496 /* Array+String+extensions.swift */,
 			);
 			path = Extensions;
@@ -369,7 +366,6 @@
 				94D69ACE2BC2A8F60076C949 /* UserLoginData.swift in Sources */,
 				94D69ACA2BC298BB0076C949 /* ConfirmEmailViewModel.swift in Sources */,
 				94D69AA42BC13D090076C949 /* LoginViewModel.swift in Sources */,
-				94D69AC42BC1B0330076C949 /* Character+extensions.swift in Sources */,
 				94D69AC02BC185FD0076C949 /* ConfirmEmailView.swift in Sources */,
 				94AF6F032BC5460700A04496 /* FavoriteViewModel.swift in Sources */,
 				94D69AA22BC13C9F0076C949 /* LoginCoordinatorView.swift in Sources */,

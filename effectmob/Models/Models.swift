@@ -66,7 +66,6 @@ class Offer: Codable, Identifiable {
         id = try container.decodeIfPresent(String.self, forKey: .id)
         title = try container.decode(String.self, forKey: .title)
         link = try container.decode(String.self, forKey: .link)
-//        button = try container.decodeIfPresent(ButtonText.self, forKey: .button)
     }
     
     func encode(to encoder: Encoder) throws {
