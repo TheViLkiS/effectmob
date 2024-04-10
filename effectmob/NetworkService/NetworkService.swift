@@ -11,7 +11,7 @@ import SwiftData
 final class NetworkService {
     
     func fetchData() -> JobSearchData {
-
+        
         if let url = Bundle.main.url(forResource: "dataFromServer", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url)

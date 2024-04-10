@@ -8,6 +8,7 @@
 import SwiftUI
 
 class HomeCoordinator: ObservableObject {
+    
     @Published var tab = HomeTab.jobFeed
     @Published var jobFeedCoordinator: JobFeedCoordinator!
     @Published var favoriteCoordinator: FavoriteCoordinator!

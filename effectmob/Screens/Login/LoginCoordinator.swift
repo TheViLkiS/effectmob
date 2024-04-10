@@ -9,6 +9,7 @@ import SwiftUI
 import Combine
 
 class LoginCoordinator: ObservableObject, Identifiable {
+    
     @Published var viewModel: LoginViewModel!
     @Published var confirmEmailViewModel: ConfirmEmailViewModel?
 

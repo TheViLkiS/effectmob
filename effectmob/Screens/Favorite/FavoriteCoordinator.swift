@@ -8,6 +8,7 @@
 import SwiftUI
 
 class FavoriteCoordinator: ObservableObject, Identifiable {
+    
     @Published var viewModel: FavoriteViewModel!
     @Published var vacancyViewModel: VacancyViewModel?
 

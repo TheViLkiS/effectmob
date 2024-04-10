@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 final class FavoriteViewModel: ObservableObject {
+    
     private let networkService: NetworkService
     private unowned let coordinator: FeedCoordinator
     

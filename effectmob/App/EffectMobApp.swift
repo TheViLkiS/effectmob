@@ -9,22 +9,36 @@ import SwiftData
 
 @main
 struct EffectMobApp: App {
+    
     @StateObject var coordinator = HomeCoordinator(networkService: NetworkService())
     @Environment(\.modelContext) var modelContext
     
-    let modelContainer: ModelContainer
+    let modelContainer: ModelContainer?
     init() {
-      do {
-          modelContainer = try ModelContainer(for: JobSearchData.self, Offer.self, ButtonText.self, Vacancy.self, Address.self, Experience.self, Salary.self)
-      } catch {
-        fatalError("Could not initialize ModelContainer")
-      }
+        modelContainer = EffectMobApp.initializeModelContainer()
     }
     
     var body: some Scene {
+        
         WindowGroup {
-            LoginCoordinatorView(homeCoordinator: coordinator)
+            if let modelContainer = modelContainer {
+                LoginCoordinatorView(homeCoordinator: coordinator)
+                    .modelContainer(modelContainer)
+            } else {
+                LoginCoordinatorView(homeCoordinator: coordinator)
+            }
         }
-        .modelContainer(modelContainer)
+    }
+    
+    private static func initializeModelContainer() -> ModelContainer? {
+        
+        let modelType = JobSearchData.self
+        do {
+            return try ModelContainer(for: modelType)
+        } catch {
+            print("Could not initialize ModelContainer: \(error)")
+            return nil
+        }
     }
 }
+

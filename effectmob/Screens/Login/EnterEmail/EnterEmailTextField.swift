@@ -7,19 +7,29 @@
 
 import SwiftUI
 
+// MARK: - Constants
+private struct Constants {
+    static let textFieldWidth: CGFloat = 20
+    static let textFieldHeight: CGFloat = 20
+    static let textFieldPadding: CGFloat = 28
+    static let clearButtonImageName = "texfieldClearButtonImage"
+}
+
 struct EnterEmailTextField: View {
+    // MARK: - Properties
     @Binding var text: String
     var placeholder: String
     var imageName: String
     @State private var isEditing = false
 
+    // MARK: - Body
     var body: some View {
         HStack {
             if !isEditing {
                 Image(imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 20, height: 20)
+                    .frame(width: Constants.textFieldWidth, height: Constants.textFieldHeight)
             }
             ZStack(alignment: .leading) {
                 if text.isEmpty {
@@ -31,7 +41,7 @@ struct EnterEmailTextField: View {
                     isEditing = editing
                 })
                 .font(.text1)
-                .padding(.trailing, 28)
+                .padding(.trailing, Constants.textFieldPadding)
                 .foregroundColor(.white)
                 .overlay(
                     HStack {
@@ -40,7 +50,7 @@ struct EnterEmailTextField: View {
                             Button(action: {
                                 self.text = ""
                             }) {
-                                Image("texfieldClearButtonImage", bundle: nil)
+                                Image(Constants.clearButtonImageName, bundle: nil)
                                     .foregroundColor(.white)
                             }
                         }
