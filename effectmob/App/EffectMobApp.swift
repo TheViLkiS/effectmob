@@ -7,6 +7,8 @@
 import SwiftUI
 import SwiftData
 
+
+//MARK: - Захардкоженный текст был в условии ТЗ. Конечно, я обычно так не делаю.
 @main
 struct EffectMobApp: App {
     

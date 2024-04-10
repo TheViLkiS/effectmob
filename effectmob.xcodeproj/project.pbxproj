@@ -201,7 +201,6 @@
 				94D69AA32BC13D090076C949 /* LoginViewModel.swift */,
 				94D69AC72BC2982C0076C949 /* EnterEmail */,
 				94D69AC82BC298440076C949 /* ConfirmEmail */,
-				94D69ACD2BC2A8F50076C949 /* UserLoginData.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -255,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				94D69AD32BC2D2E50076C949 /* Models.swift */,
+				94D69ACD2BC2A8F50076C949 /* UserLoginData.swift */,
 				94AF6F042BC549E100A04496 /* FeedCoordinator.swift */,
 			);
 			path = Models;

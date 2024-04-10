@@ -16,6 +16,8 @@ extension Font {
     
     static var text1: Font { Font.system(size: 14, weight: .regular, design: .default) }
     
+    static var largeNumbers: Font { Font.system(size: 24, weight: .medium, design: .default) }
+    
     static var buttonText1: Font { Font.system(size: 16, weight: .semibold, design: .default) }
     static var buttonText2: Font { Font.system(size: 14, weight: .regular, design: .default) }
     
