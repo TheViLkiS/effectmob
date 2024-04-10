@@ -20,7 +20,7 @@ struct LoginCoordinatorView: View {
             VStack(spacing: 22) {
                 HStack {
                     Text("Вход в личный кабинет")
-                        .font(.system(size: 20, weight: .semibold, design: .default))
+                        .font(.title2)
                         .foregroundColor(.white)
                         .padding(16)
                     Spacer()

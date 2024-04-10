@@ -24,13 +24,13 @@ struct EnterEmailTextField: View {
             ZStack(alignment: .leading) {
                 if text.isEmpty {
                     Text(placeholder)
-                        .font(.system(size: 14, weight: .regular, design: .default))
+                        .font(.text1)
                         .foregroundColor(Color(rgb: 0x9F9F9F))
                 }
                 TextField("", text: $text, onEditingChanged: { editing in
                     isEditing = editing
                 })
-                .font(.system(size: 14, weight: .regular, design: .default))
+                .font(.text1)
                 .padding(.trailing, 28)
                 .foregroundColor(.white)
                 .overlay(

@@ -16,17 +16,17 @@ struct VacancyFullView: View {
         ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 16) {
                     Text(vacancy.title)
-                        .font(.system(size: 22, weight: .semibold, design: .default))
+                        .font(.title1)
                         .foregroundColor(.white)
                     Text(vacancy.salary.full)
-                        .font(.system(size: 14, weight: .regular, design: .default))
+                        .font(.text1)
                         .foregroundColor(.white)
                     VStack(alignment: .leading, spacing: 0) {
                         Text("Требуемый опыт: \(vacancy.experience.text)")
-                            .font(.system(size: 14, weight: .regular, design: .default))
+                            .font(.text1)
                             .foregroundColor(.white)
                         Text(vacancy.schedules.capitalizedSentence())
-                        .font(.system(size: 14, weight: .regular, design: .default))
+                        .font(.text1)
                         .foregroundColor(.white)
                     }
                     HStack {
@@ -43,24 +43,24 @@ struct VacancyFullView: View {
                     
                     if let description = vacancy.descriptionText {
                         Text(description)
-                                .font(.system(size: 14, weight: .regular, design: .default))
+                                .font(.text1)
                                 .foregroundColor(.white)
                     }
                     
                     Text("Ваши задачи")
-                        .font(.system(size: 20, weight: .semibold, design: .default))
+                        .font(.title2)
                         .foregroundColor(.white)
                     
                     Text(vacancy.responsibilities)
-                            .font(.system(size: 14, weight: .regular, design: .default))
+                            .font(.text1)
                             .foregroundColor(.white)
                     
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Задайте вопрос работодателю")
-                            .font(.system(size: 14, weight: .medium, design: .default))
+                            .font(.title4)
                             .foregroundColor(.white)
                         Text("Он получит его с откликом на вакансию")
-                            .font(.system(size: 14, weight: .medium, design: .default))
+                            .font(.title4)
                             .foregroundColor(Color(rgb: 0x858688))
                     }
                     .padding(.top, 28)
@@ -69,7 +69,7 @@ struct VacancyFullView: View {
                         }) {
                             Text(question)
                                 .padding(.horizontal, 12)
-                                .font(.system(size: 14, weight: .medium, design: .default))
+                                .font(.title4)
                                 .frame(height: 40, alignment: .center)
                                 .background(Color(rgb: 0x313234))
                                 .foregroundColor(.white)
@@ -81,7 +81,7 @@ struct VacancyFullView: View {
                         print("Кнопка Откликнуться нажата")
                     }) {
                         Text("Откликнуться")
-                            .font(.system(size: 14, weight: .regular, design: .default))
+                            .font(.buttonText2)
                             .frame(maxWidth: .infinity)
                             .frame(height: 48, alignment: .center)
                             .background(Color(rgb: 0x4CB24E))

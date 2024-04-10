@@ -17,7 +17,7 @@ struct EnterEmailModulView: View {
         VStack(alignment: .leading, spacing: 16) {
             HStack {
                 Text("Поиск работы")
-                    .font(.system(size: 16, weight: .medium, design: .default))
+                    .font(.title3)
                     .foregroundColor(.white)
                 Spacer()
             }
@@ -57,7 +57,7 @@ struct EnterEmailModulView: View {
                     continueButtonTap(userLoginData)
                 }) {
                     Text("Продолжить")
-                        .font(.system(size: 14, weight: .regular, design: .default))
+                        .font(.buttonText2)
                         .frame(width: 167, height: 40, alignment: .center)
                         .background(Color(rgb: 0x2B7EFE))
                         .foregroundColor(.white)
@@ -74,7 +74,7 @@ struct EnterEmailModulView: View {
                    loginWithPasswordButtonTap()
                 }) {
                     Text("Войти с паролем")
-                        .font(.system(size: 14, weight: .regular, design: .default))
+                        .font(.buttonText2)
                         .background(Color.clear)
                         .foregroundColor(Color(rgb: 0x2B7EFE))
                         .cornerRadius(10.0)

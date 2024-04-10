@@ -23,21 +23,21 @@ struct VacancyCardView: View {
                 HStack {
                     if let lookingNumber = vacancy.lookingNumber {
                         Text(String(format: NSLocalizedString("Now looking people", comment: ""), lookingNumber))
-                            .font(.system(size: 14, weight: .regular, design: .default))
+                            .font(.text1)
                             .foregroundColor(Color(rgb: 0x4CB24E))
                     }
                     Spacer()
                 }
                 Text(vacancy.title)
-                    .font(.system(size: 16, weight: .medium, design: .default))
+                    .font(.title3)
                     .foregroundColor(.white)
                 VStack(alignment: .leading, spacing: 0) {
                     Text(vacancy.address.town)
-                        .font(.system(size: 14, weight: .regular, design: .default))
+                        .font(.text1)
                         .foregroundColor(.white)
                     HStack {
                         Text(vacancy.company)
-                            .font(.system(size: 14, weight: .regular, design: .default))
+                            .font(.text1)
                             .foregroundColor(.white)
                         Image("approveCompanyIcon")
                     }
@@ -45,18 +45,18 @@ struct VacancyCardView: View {
                 HStack(spacing: 8) {
                     Image("suitcaseVacancyIcon")
                     Text(vacancy.experience.previewText)
-                        .font(.system(size: 14, weight: .regular, design: .default))
+                        .font(.text1)
                         .foregroundColor(.white)
                 }
                 Text("Опубликовано \(vacancy.publishedDate.toDate(format: .yyyyMMdd).dateString())")
-                    .font(.system(size: 14, weight: .regular, design: .default))
+                    .font(.text1)
                     .foregroundColor(Color(rgb: 0x858688))
                 
                 Button(action: {
                     print("Кнопка Откликнуться нажата")
                 }) {
                     Text("Откликнуться")
-                        .font(.system(size: 14, weight: .regular, design: .default))
+                        .font(.buttonText2)
                         .frame(maxWidth: .infinity)
                         .frame(height: 40, alignment: .center)
                         .background(Color(rgb: 0x4CB24E))

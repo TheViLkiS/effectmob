@@ -69,7 +69,7 @@ struct HomeCoordinatorView: View {
         .onAppear() {
             UITabBar.appearance().backgroundColor = UIColor(.black)
             UITabBar.appearance().barTintColor = .black
-            UITabBar.appearance().tintColor = .blue
+            UITabBar.appearance().tintColor = UIColor(Color.blue2B7EFE)
             UITabBar.appearance().layer.borderColor = UIColor.clear.cgColor
             UITabBar.appearance().clipsToBounds = true
                 }

@@ -26,10 +26,10 @@ struct ConfirmEmailModulView: View {
         VStack(alignment: .leading, spacing: 16) {
             VStack(alignment: .leading, spacing: 8) {
                 Text("Отправили код на \(userEmail)")
-                        .font(.system(size: 20, weight: .semibold, design: .default))
+                        .font(.title2)
                         .foregroundColor(.white)
                 Text("Напишите его, чтобы подтвердить, что это вы, а не кто-то другой входит в личный кабинет")
-                    .font(.system(size: 16, weight: .medium, design: .default))
+                    .font(.title3)
                     .foregroundColor(.white)
             }
             HStack {
@@ -57,7 +57,7 @@ struct ConfirmEmailModulView: View {
                 continueButtonTap()
             }) {
                 Text("Подтвердить")
-                    .font(.system(size: 16, weight: .semibold, design: .default))
+                    .font(.buttonText1)
                     .frame(maxWidth: .infinity)
                     .frame(height: 40, alignment: .center)
                     .background(isAllNumbersInputed ? Color(rgb: 0x2B7EFE): Color(rgb: 0x00427D))

@@ -23,11 +23,11 @@ struct LookingAppliedView: View {
                     switch type {
                     case .applied:
                         Text(String(format: NSLocalizedString("People responded", comment: ""), number))
-                            .font(.system(size: 14, weight: .medium, design: .default))
+                            .font(.title4)
                             .foregroundColor(.white)
                     case .looking:
                         Text(String(format: NSLocalizedString("People looking now", comment: ""), number))
-                            .font(.system(size: 14, weight: .medium, design: .default))
+                            .font(.title4)
                             .foregroundColor(.white)
                     }
                 }

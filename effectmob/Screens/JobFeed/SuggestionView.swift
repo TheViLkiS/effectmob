@@ -23,11 +23,11 @@ struct SuggestionView: View {
                 .padding(.top, 10)
                 VStack(alignment: .leading) {
                     Text(centralText)
-                        .font(.system(size: 14, weight: .medium, design: .default))
+                        .font(.title4)
                         .foregroundColor(.white)
                     if let bottomText = bottomText {
                             Text(bottomText)
-                            .font(.system(size: 14, weight: .regular, design: .default))
+                            .font(.text1)
                             .frame(alignment: .leading)
                             .foregroundColor(Color(rgb: 0x4CB24E))
                     }

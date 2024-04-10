@@ -44,7 +44,7 @@ struct JobFeedCoordinatorView: View {
                 }
                 HStack {
                     Text("Вакансии для вас")
-                        .font(.system(size: 20, weight: .semibold, design: .default))
+                        .font(.title2)
                         .foregroundColor(.white)
                         .padding(.leading, 16)
                     Spacer()
@@ -62,7 +62,7 @@ struct JobFeedCoordinatorView: View {
                         print("Кнопка Откликнуться нажата")
                     }) {
                         Text(String(format: NSLocalizedString("More vacancies", comment: ""), vacancies.count))
-                            .font(.system(size: 14, weight: .regular, design: .default))
+                            .font(.buttonText2)
                             .frame(maxWidth: .infinity)
                             .frame(height: 48, alignment: .center)
                             .background(Color(rgb: 0x2B7EFE))

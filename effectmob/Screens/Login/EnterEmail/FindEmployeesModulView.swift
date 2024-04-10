@@ -13,12 +13,12 @@ struct FindEmployeesModulView: View {
             VStack(spacing: 8) {
                 HStack {
                     Text("Поиск сотрудников")
-                        .font(.system(size: 16, weight: .medium, design: .default))
+                        .font(.title3)
                         .foregroundColor(.white)
                     Spacer()
                 }
                 Text("Размещение вакансий и доступ к базе резюме")
-                    .font(.system(size: 14, weight: .regular, design: .default))
+                    .font(.text1)
                     .foregroundColor(.white)
             }
             
@@ -26,7 +26,7 @@ struct FindEmployeesModulView: View {
                 print("Кнопка 1 нажата")
             }) {
                 Text("Я ищу сотрудников")
-                    .font(.system(size: 14, weight: .regular, design: .default))
+                    .font(.buttonText2)
                     .frame(maxWidth: .infinity)
                     .frame(height: 40, alignment: .center)
                     .background(Color(rgb: 0x4CB24E))

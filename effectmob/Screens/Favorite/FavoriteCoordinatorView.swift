@@ -21,15 +21,15 @@ struct FavoriteCoordinatorView: View {
             VStack(spacing: 0) {
                 HStack {
                     Text("Избранное")
-                        .font(.system(size: 20, weight: .semibold, design: .default))
+                        .font(.title2)
                         .foregroundColor(.white)
                         .padding(.leading, 16)
                     Spacer()
                 }
                 HStack {
                     Text(String(format: NSLocalizedString("Num vacancy", comment: ""), favoriteVacancies.count))
-                        .font(.system(size: 14, weight: .regular, design: .default))
-                        .foregroundColor(Color(rgb: 0x858688))
+                        .font(.text1)
+                        .foregroundColor(.grey858688)
                         .padding(.leading, 16)
                     Spacer()
                 }

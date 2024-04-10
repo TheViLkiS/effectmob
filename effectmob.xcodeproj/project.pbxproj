@@ -22,6 +22,7 @@
 		94AF6F052BC549E100A04496 /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6F042BC549E100A04496 /* FeedCoordinator.swift */; };
 		94AF6F6F2BC6A93E00A04496 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 94AF6F6E2BC6A93E00A04496 /* Localizable.xcstrings */; };
 		94AF6F712BC6B4F100A04496 /* Date+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6F702BC6B4F100A04496 /* Date+extensions.swift */; };
+		94AF6F732BC6C09400A04496 /* Font+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6F722BC6C09400A04496 /* Font+extensions.swift */; };
 		94D69A7C2BC1334E0076C949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D69A7B2BC1334E0076C949 /* Assets.xcassets */; };
 		94D69A7F2BC1334E0076C949 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D69A7E2BC1334E0076C949 /* Preview Assets.xcassets */; };
 		94D69A862BC135090076C949 /* EffectMobApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69A852BC135090076C949 /* EffectMobApp.swift */; };
@@ -63,6 +64,7 @@
 		94AF6F042BC549E100A04496 /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
 		94AF6F6E2BC6A93E00A04496 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		94AF6F702BC6B4F100A04496 /* Date+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+extensions.swift"; sourceTree = "<group>"; };
+		94AF6F722BC6C09400A04496 /* Font+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+extensions.swift"; sourceTree = "<group>"; };
 		94D69A742BC1334C0076C949 /* effectmob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = effectmob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D69A7B2BC1334E0076C949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94D69A7E2BC1334E0076C949 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				94D69AB42BC152C00076C949 /* Color+extensions.swift */,
+				94AF6F722BC6C09400A04496 /* Font+extensions.swift */,
 				94D69ABB2BC170220076C949 /* String+extensions.swift */,
 				94AF6EF02BC3FB4200A04496 /* Array+String+extensions.swift */,
 				94AF6F702BC6B4F100A04496 /* Date+extensions.swift */,
@@ -373,6 +376,7 @@
 				94D69AE02BC2DDA20076C949 /* JobFeedViewModel.swift in Sources */,
 				94AF6EEF2BC3EF9F00A04496 /* VacancyViewModel.swift in Sources */,
 				94D69ACE2BC2A8F60076C949 /* UserLoginData.swift in Sources */,
+				94AF6F732BC6C09400A04496 /* Font+extensions.swift in Sources */,
 				94D69ACA2BC298BB0076C949 /* ConfirmEmailViewModel.swift in Sources */,
 				94D69AA42BC13D090076C949 /* LoginViewModel.swift in Sources */,
 				94D69AC02BC185FD0076C949 /* ConfirmEmailView.swift in Sources */,

@@ -15,14 +15,14 @@ struct AdressMapView: View {
         VStack(alignment: .leading) {
             HStack {
                 Text(company)
-                    .font(.system(size: 16, weight: .medium, design: .default))
+                    .font(.title3)
                     .foregroundColor(.white)
                 Image("approveCompanyIcon")
             }
             Image("googleMap")
                 .resizable()
             Text([address.town, address.street, address.house].joined(separator: " ,"))
-                    .font(.system(size: 14, weight: .regular, design: .default))
+                    .font(.text1)
                     .foregroundColor(.white)
         }
         .padding(.horizontal, 16)
