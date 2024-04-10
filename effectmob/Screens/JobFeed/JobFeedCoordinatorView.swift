@@ -61,7 +61,7 @@ struct JobFeedCoordinatorView: View {
                     Button(action: {
                         print("Кнопка Откликнуться нажата")
                     }) {
-                        Text("Еще \(vacancies.count) вакансии")
+                        Text(String(format: NSLocalizedString("More vacancies", comment: ""), vacancies.count))
                             .font(.system(size: 14, weight: .regular, design: .default))
                             .frame(maxWidth: .infinity)
                             .frame(height: 48, alignment: .center)

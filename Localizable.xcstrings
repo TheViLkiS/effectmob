@@ -1,0 +1,334 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "Detail Title" : {
+
+    },
+    "More vacancies" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "More %d vacancy"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "More %d vacancies"
+                }
+              }
+            }
+          }
+        },
+        "ru" : {
+          "variations" : {
+            "plural" : {
+              "few" : {
+                "stringUnit" : {
+                  "state" : "needs_review",
+                  "value" : "Еще %d вакансии"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "needs_review",
+                  "value" : "Еще %d вакансий"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "needs_review",
+                  "value" : "Еще %d  вакансия"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "needs_review",
+                  "value" : "Еще %d вакансий"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Now looking people" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Now looking %d people"
+          }
+        },
+        "ru" : {
+          "variations" : {
+            "plural" : {
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Сейчас просматривают %d человека"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Сейчас просматривают %d человек"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Сейчас просматривает %d человек"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Сейчас просматривают %d человек"
+                }
+              },
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Сейчас просматривает %d человек"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Num vacancy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "needs_review",
+                  "value" : "%d vacancy"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d vacancies"
+                }
+              }
+            }
+          }
+        },
+        "ru" : {
+          "variations" : {
+            "plural" : {
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d вакансии"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d вакансий"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d вакансия"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d вакансий"
+                }
+              },
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d вакансий"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "People looking now" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d people looking now"
+          }
+        },
+        "ru" : {
+          "variations" : {
+            "plural" : {
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d человека сейчас смотрят"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d человек сейчас смотрят"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d человек сейчас смотрит"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d человек сейчас смотрят"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "People responded" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d people responded"
+          }
+        },
+        "ru" : {
+          "variations" : {
+            "plural" : {
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d человека уже откликнулись"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d человек уже откликнулись"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d человек уже откликнулся"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d человек уже откликнулись"
+                }
+              },
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%d человек откликнулись"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Вакансии для вас" : {
+
+    },
+    "Ваши задачи" : {
+
+    },
+    "Войти с паролем" : {
+
+    },
+    "Вход в личный кабинет" : {
+
+    },
+    "Вы ввели неверный e-mail" : {
+
+    },
+    "Задайте вопрос работодателю" : {
+
+    },
+    "Избранное" : {
+
+    },
+    "Напишите его, чтобы подтвердить, что это вы, а не кто-то другой входит в личный кабинет" : {
+
+    },
+    "Он получит его с откликом на вакансию" : {
+
+    },
+    "Отклики" : {
+
+    },
+    "Отклики экран" : {
+
+    },
+    "Откликнуться" : {
+
+    },
+    "Отправили код на %@" : {
+
+    },
+    "Подтвердить" : {
+
+    },
+    "Поиск" : {
+
+    },
+    "Поиск работы" : {
+
+    },
+    "Поиск сотрудников" : {
+
+    },
+    "Продолжить" : {
+
+    },
+    "Профиль" : {
+
+    },
+    "Профиль экран" : {
+
+    },
+    "Размещение вакансий и доступ к базе резюме" : {
+
+    },
+    "Сообщения" : {
+
+    },
+    "Сообщения экран" : {
+
+    },
+    "Требуемый опыт: %@" : {
+
+    },
+    "Я ищу сотрудников" : {
+
+    }
+  },
+  "version" : "1.0"
+}

@@ -22,7 +22,7 @@ struct VacancyCardView: View {
             VStack(alignment: .leading, spacing: 10) {
                 HStack {
                     if let lookingNumber = vacancy.lookingNumber {
-                        Text("Сейчас просматривают \(lookingNumber)")
+                        Text(String(format: NSLocalizedString("Now looking people", comment: ""), lookingNumber))
                             .font(.system(size: 14, weight: .regular, design: .default))
                             .foregroundColor(Color(rgb: 0x4CB24E))
                     }

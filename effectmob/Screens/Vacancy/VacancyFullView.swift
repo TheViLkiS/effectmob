@@ -30,8 +30,12 @@ struct VacancyFullView: View {
                         .foregroundColor(.white)
                     }
                     HStack {
-                        LookingAppliedView(type: .applied, number: 235)
-                        LookingAppliedView(type: .looking, number: 122)
+                        if let appliedNumber = vacancy.appliedNumber {
+                            LookingAppliedView(type: .applied, number: appliedNumber)
+                        }
+                        if let lookingNumber = vacancy.lookingNumber {
+                            LookingAppliedView(type: .looking, number: lookingNumber)
+                        }
                     }
                     .padding(.top, 27)
                     

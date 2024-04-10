@@ -11,7 +11,9 @@ import SwiftData
 struct FavoriteCoordinatorView: View {
     @ObservedObject var coordinator: FavoriteCoordinator
     
-    @Query var vacancies: [Vacancy]
+    @Query(filter: #Predicate<Vacancy> { vacancy in
+        vacancy.isFavorite
+    }) var favoriteVacancies: [Vacancy]
     @State var finderText: String = ""
     
     var body: some View {
@@ -25,7 +27,7 @@ struct FavoriteCoordinatorView: View {
                     Spacer()
                 }
                 HStack {
-                    Text("№ вакансия")
+                    Text(String(format: NSLocalizedString("Num vacancy", comment: ""), favoriteVacancies.count))
                         .font(.system(size: 14, weight: .regular, design: .default))
                         .foregroundColor(Color(rgb: 0x858688))
                         .padding(.leading, 16)
@@ -33,16 +35,14 @@ struct FavoriteCoordinatorView: View {
                 }
                 .padding(.top, 16)
                 ScrollView(.vertical) {
-                    ForEach(vacancies) { vacancy in
-                        if vacancy.isFavorite {
-                            NavigationLink(destination: vacancyView(vacancy)) {
-                                VacancyCardView(vacancy: vacancy)
-                                    .padding(.horizontal, 16)
-                                    .padding(.top, 8)
-                            }
-                            .buttonStyle(PlainButtonStyle())
-                            .padding(.bottom, 16)
+                    ForEach(favoriteVacancies) { vacancy in
+                        NavigationLink(destination: vacancyView(vacancy)) {
+                            VacancyCardView(vacancy: vacancy)
+                                .padding(.horizontal, 16)
+                                .padding(.top, 8)
                         }
+                        .buttonStyle(PlainButtonStyle())
+                        .padding(.bottom, 16)
                     }
                 }
             }
@@ -50,7 +50,7 @@ struct FavoriteCoordinatorView: View {
             .modifier(DismissingKeyboard())
         }
     }
-
+    
     @ViewBuilder
     private func vacancyView(_ vacancy: Vacancy) -> some View {
         VacancyFullView(vacancy: vacancy)

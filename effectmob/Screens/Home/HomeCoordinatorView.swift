@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Combine
+import SwiftData
 
 enum HomeTab {
     case jobFeed
@@ -17,7 +18,11 @@ enum HomeTab {
 }
 
 struct HomeCoordinatorView: View {
+    @Environment(\.modelContext) var modelContext
     @ObservedObject var coordinator: HomeCoordinator
+    @Query(filter: #Predicate<Vacancy> { vacancy in
+        vacancy.isFavorite
+    }) var favoriteVacancies: [Vacancy]
 
     var body: some View {
         TabView(selection: $coordinator.tab) {
@@ -36,6 +41,7 @@ struct HomeCoordinatorView: View {
                         .renderingMode(coordinator.tab == HomeTab.favorite ? .template : .original)
                     Text("Избранное")
                 }
+                .badge(favoriteVacancies.count)
                 .tag(HomeTab.favorite)
     Text("Отклики экран")
         .tabItem {

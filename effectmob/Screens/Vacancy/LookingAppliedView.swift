@@ -22,11 +22,11 @@ struct LookingAppliedView: View {
                 VStack(alignment: .leading) {
                     switch type {
                     case .applied:
-                        Text("\(number) человек уже откликнулись")
+                        Text(String(format: NSLocalizedString("People responded", comment: ""), number))
                             .font(.system(size: 14, weight: .medium, design: .default))
                             .foregroundColor(.white)
                     case .looking:
-                        Text("\(number) человека сейчас смотрят")
+                        Text(String(format: NSLocalizedString("People looking now", comment: ""), number))
                             .font(.system(size: 14, weight: .medium, design: .default))
                             .foregroundColor(.white)
                     }
