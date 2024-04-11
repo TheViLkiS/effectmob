@@ -14,7 +14,7 @@
 		94AF6EF32BC5222300A04496 /* JobFeedCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EF22BC5222300A04496 /* JobFeedCoordinatorView.swift */; };
 		94AF6EF52BC5229400A04496 /* JobFeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EF42BC5229400A04496 /* JobFeedCoordinator.swift */; };
 		94AF6EF72BC52AF300A04496 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EF62BC52AF300A04496 /* HomeCoordinator.swift */; };
-		94AF6EFA2BC5304100A04496 /* AdressMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EF92BC5304100A04496 /* AdressMapView.swift */; };
+		94AF6EFA2BC5304100A04496 /* AddressMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EF92BC5304100A04496 /* AddressMapView.swift */; };
 		94AF6EFC2BC5306900A04496 /* LookingAppliedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EFB2BC5306900A04496 /* LookingAppliedView.swift */; };
 		94AF6EFF2BC545DD00A04496 /* FavoriteCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6EFE2BC545DD00A04496 /* FavoriteCoordinator.swift */; };
 		94AF6F012BC545F300A04496 /* FavoriteCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF6F002BC545F300A04496 /* FavoriteCoordinatorView.swift */; };
@@ -56,7 +56,7 @@
 		94AF6EF22BC5222300A04496 /* JobFeedCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobFeedCoordinatorView.swift; sourceTree = "<group>"; };
 		94AF6EF42BC5229400A04496 /* JobFeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobFeedCoordinator.swift; sourceTree = "<group>"; };
 		94AF6EF62BC52AF300A04496 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
-		94AF6EF92BC5304100A04496 /* AdressMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressMapView.swift; sourceTree = "<group>"; };
+		94AF6EF92BC5304100A04496 /* AddressMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressMapView.swift; sourceTree = "<group>"; };
 		94AF6EFB2BC5306900A04496 /* LookingAppliedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookingAppliedView.swift; sourceTree = "<group>"; };
 		94AF6EFE2BC545DD00A04496 /* FavoriteCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCoordinator.swift; sourceTree = "<group>"; };
 		94AF6F002BC545F300A04496 /* FavoriteCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCoordinatorView.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 			children = (
 				94AF6EEC2BC3EF9100A04496 /* VacancyFullView.swift */,
 				94AF6EEE2BC3EF9F00A04496 /* VacancyViewModel.swift */,
-				94AF6EF92BC5304100A04496 /* AdressMapView.swift */,
+				94AF6EF92BC5304100A04496 /* AddressMapView.swift */,
 				94AF6EFB2BC5306900A04496 /* LookingAppliedView.swift */,
 			);
 			path = Vacancy;
@@ -116,10 +116,10 @@
 		94AF6EF82BC52C3D00A04496 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				94AF6EFD2BC545C000A04496 /* Favorite */,
-				94D69A9D2BC13AC20076C949 /* Home */,
 				94D69A9E2BC13C050076C949 /* Login */,
+				94D69A9D2BC13AC20076C949 /* Home */,
 				94D69ACF2BC2D0EA0076C949 /* JobFeed */,
+				94AF6EFD2BC545C000A04496 /* Favorite */,
 				94AF6EE92BC3EF6200A04496 /* Vacancy */,
 			);
 			path = Screens;
@@ -138,7 +138,6 @@
 		94D69A6B2BC1334C0076C949 = {
 			isa = PBXGroup;
 			children = (
-				94AF6F6E2BC6A93E00A04496 /* Localizable.xcstrings */,
 				94D69A762BC1334C0076C949 /* effectmob */,
 				94D69A752BC1334C0076C949 /* Products */,
 			);
@@ -158,10 +157,10 @@
 				94D69A9C2BC13AB70076C949 /* App */,
 				94D69ADA2BC2D58E0076C949 /* NetworkService */,
 				94AF6EF82BC52C3D00A04496 /* Screens */,
-				94D69AE32BC2E5ED0076C949 /* ViewModifiers */,
-				94D69AD52BC2D4A70076C949 /* Resources */,
 				94D69AD22BC2D2DA0076C949 /* Models */,
 				94D69AB32BC152AE0076C949 /* Extensions */,
+				94D69AE32BC2E5ED0076C949 /* ViewModifiers */,
+				94D69AD52BC2D4A70076C949 /* Resources */,
 				94D69A7B2BC1334E0076C949 /* Assets.xcassets */,
 				94D69A7D2BC1334E0076C949 /* Preview Content */,
 			);
@@ -263,6 +262,7 @@
 		94D69AD52BC2D4A70076C949 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				94AF6F6E2BC6A93E00A04496 /* Localizable.xcstrings */,
 				94D69AD82BC2D55E0076C949 /* dataFromServer.json */,
 			);
 			path = Resources;
@@ -358,7 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94AF6EFC2BC5306900A04496 /* LookingAppliedView.swift in Sources */,
-				94AF6EFA2BC5304100A04496 /* AdressMapView.swift in Sources */,
+				94AF6EFA2BC5304100A04496 /* AddressMapView.swift in Sources */,
 				94D69AC22BC18AC90076C949 /* EnterConfirmNumberTextField.swift in Sources */,
 				94D69AE72BC2E9B80076C949 /* SuggestionView.swift in Sources */,
 				94AF6EF32BC5222300A04496 /* JobFeedCoordinatorView.swift in Sources */,
